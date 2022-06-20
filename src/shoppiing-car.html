@@ -1,0 +1,435 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>购物车</title>
+  <link rel="stylesheet" href="../src/css/font_3471526_rygqt3tm4zb/iconfont.css">
+  <link rel="stylesheet" href="./css/shopping-car.css">
+</head>
+<body>
+    <!-- header部分结构设计 -->
+    <header id="header">
+      <div class="con">
+        <!-- 头部导航左侧 -->
+        <ul class="header-left">
+          <li class="tmall-index">
+            <a href="./index.html">
+              <i class="iconfont icon-shouye red"></i>
+              天猫首页
+            </a>
+          </li>
+          <li class="hello-tmall">
+            瞄，欢迎来到天猫
+          </li>
+          <li class="login-place">
+            <a href="./login.html">请登录</a>
+          </li>
+          <li class="free-reg">
+            <a href="./register.html">免费注册</a>
+          </li>
+        </ul>
+        <!-- 头部导航右侧 -->
+        <ul class="header-right">
+          <li class="header-right-mytaobao dropdown">
+            <a href="javascript:;">
+              我的淘宝
+             
+            </a>
+            <i class="iconfont icon-sanjiaoxia carts"></i>
+            <ul class="dropdown-left">
+              <li>
+                <a href="javascript:;">已买到的宝贝</a>
+              </li>
+              <li>
+                <a href="javascript:;">已卖出的宝贝</a>
+              </li>
+            </ul>
+          </li>
+          <li class="header-right-shopping-car">
+            <a href="javascript:;">
+              <i class="iconfont icon-gouwuche red"></i>
+              购物车
+            </a>
+          </li>
+          <li class="header-right-favorites dropdown">
+            <a href="javascript:;">
+              收藏夹
+              
+            </a>
+            <i class="iconfont icon-sanjiaoxia carts"></i>
+            <ul class="dropdown-left">
+              <li><a href="javascript:;">收藏的宝贝</a></li>
+              <li><a href="javascript:;">收藏的店铺</a></li>
+            </ul>
+          </li>
+          <li class="phone-version dropdown">
+            <a href="javascript:;">
+              <i class="iconfont icon-shouji red"></i>
+              手机版
+            </a>
+          </li>
+          <li>
+            <a href="javascript:;">淘宝网</a>
+          </li>
+          <li>
+            <a href="javascript:;">网页无障碍</a>
+          </li>
+          <li class="dropdown">
+            <a href="javascript:;">
+              商家支持
+             
+            </a>
+            <i class="iconfont icon-sanjiaoxia carts"></i>
+            <ul class="dropdown-right">
+              <li class="merchants">
+                <h3>商家</h3>
+                <a href="javascript:;">商家中心</a>
+                <a href="javascript:;">天猫规则</a>
+                <a href="javascript:;">商家入驻</a>
+                <a href="javascript:;">运营服务</a>
+                <a href="javascript:;">商家品控</a>
+                <a href="javascript:;">商家工具</a>
+                <a href="javascript:;">天猫智库</a>
+                <a href="javascript:;">瞄言喵语</a>
+              </li>
+              <li>
+                <h3>帮助</h3>
+                <a href="javascript:;">商家服务大厅</a>
+                <a href="javascript:;">问商友</a>
+              </li>
+            </ul>
+          </li>
+          <li>
+            <a href="javascript:;">商家中心</a>
+          </li>
+        </ul>
+      </div>
+    </header>
+
+    <!-- 搜索区域 -->
+    <div id="search-plate" class="con">
+      <h1>
+        <a href="javascript:;"><img src="./img/10006.png" alt="天猫网" title="天猫"></a>
+      </h1>
+      <div class="search-box">
+        <div class="search-class">
+          <div><i class="iconfont icon-fangdajing"></i><span>宝贝</span><i class="iconfont icon-xiajiantou"></i></div>
+          <ul class="search-class-list" style="display: none;">
+            <li>天猫</li>
+            <li>店铺</li>
+          </ul>
+        </div>
+       <input type="text" class="search-input">
+       <div class="search-btn">搜索</div>
+      </div>
+    </div>
+
+    <!-- 购物车区域 -->
+    <div id="shopping-car">
+      <div class="con">
+        <div class="shopping-car-empty" style="display: none;">
+          <div class="shopping-car-empty-title">
+            <p class="title-left">
+              <span>您的位置：</span>
+              <a href="javascript:;">首页</a>
+              <i class="iconfont icon-xiajiantou"></i>
+              <a href="javascript:;">我的淘宝</a>
+              <i class="iconfont icon-xiajiantou"></i>
+              <span>我的购物车</span>
+            </p>
+            <p class="title-right">
+              <i>购物车帮您一次性完成批量购买与付款，下单更便捷，付款更简单！</i>
+              <a href="javascript:;">如何使用购物车</a>
+            </p>
+          </div>
+          <div class="empty-con">
+            <h2>您的购物车还是空的，赶紧行动吧！您可以：</h2>
+            <p>看看 <a href="javascript:;">我的收藏夹</a></p>
+            <p>看看 <a href="javascript:;">已买到的宝贝</a></p>
+          </div>
+        </div> 
+
+        <div class="shopping-car-goods">
+          <div class="car-header">
+            <div class="car-header-left">
+              <span>购物车</span>
+            </div>
+            <div class="car-total">
+              <label for="">已选商品（不含运费）</label>
+              <span>0.00</span>
+              <div class="settle-accounts">结算</div>
+            </div>
+          </div>
+          <div class="car-goods-title">
+            <div class="all-chk">
+              <input type="checkbox" name="checkAll" id="checkAll">
+              <label for="checkAll">全选</label>
+            </div>
+            <div class="goods-info-title">商品信息</div>
+            <div class="goods-price-title">单价</div>
+            <div class="goods-number-title">数量</div>
+            <div class="goods-sum-title">金额</div>
+            <div class="goods-operation-title">操作</div>
+          </div>
+          <div class="car-goods-content">
+            <div class="goods-groups">
+              <div class="goods-groups-header">
+                <input type="checkbox" name="group-chk" id="group-chk" class="group-chk">
+                <img src="./img/10129.png" alt="天猫国际" title="天猫国际">
+                <span>店铺：</span>
+                <a href="javascript:;" class="store-name">Axonus户外海外专</a>
+                <a href="javascript:;" class="ww-line"></a>
+                <div class="discount-coupon">
+                 <a href="javascript:;">
+                  <span>优惠券</span>
+                  <i class="iconfont icon-xiajiantou"></i>
+                 </a>
+                  <div class="discount-coupon-list"  style="display:none;">
+                      <div class="close"><i class="iconfont icon-cuocha_kuai"></i></div>
+                      <p class="discount-coupon-list-title">
+                        <i class="iconfont icon-xiaoxi"></i>
+                        已领取<span>0</span>张优惠券，有新优惠券可领取
+                      </p>
+                      <ul class="discount-coupon-listbox">
+                        <li class="discount-coupon-items">
+                          <div>￥<span>20</span></div>
+                          <div>
+                            <p class="discount-coupon-items-info">6月 1599-20 满1599减20</p>
+                            <p class="discount-coupon-items-time">2022.06.01 00:00-2022.06.30 23:59</p>
+                          </div>
+                          <div class="discount-coupon-items-btn">领取</div>
+                        </li>
+                        <li class="discount-coupon-items">
+                          <div>￥<span>20</span></div>
+                          <div>
+                            <p class="discount-coupon-items-info">6月 1599-20 满1599减20</p>
+                            <p class="discount-coupon-items-time">2022.06.01 00:00-2022.06.30 23:59</p>
+                          </div>
+                          <div class="discount-coupon-items-btn">领取</div>
+                        </li>
+                        <li class="discount-coupon-items">
+                          <div>￥<span>20</span></div>
+                          <div>
+                            <p class="discount-coupon-items-info">6月 1599-20 满1599减20</p>
+                            <p class="discount-coupon-items-time">2022.06.01 00:00-2022.06.30 23:59</p>
+                          </div>
+                          <div class="discount-coupon-items-btn">领取</div>
+                        </li>
+                      </ul>
+                  </div>
+                </div>
+              </div>
+              <div class="goods-groups-content">
+                <div class="goods-groups-welfare">
+                  <img src="../src/img/10132.png" alt="跨店满减" title="跨店满减">
+                  <span>每满300减50，可跨店</span>
+                </div>
+                <ul class="goods-groups-commodity-list">
+                  <li class="goods-groups-commodity-items">
+                    <div class="commodity-items-chk-box">
+                      <input type="checkbox" name="commodity-items-chk" id="commodity-items-chk">
+                    </div>
+                    <div class="commodity-items-info-box">
+                      <a href="javascript:;" class="commodity-items-info-left">
+                        <img src="./img/10125.jpg" alt="运动套装" title="【狂欢价】运动套装男士夏季2021新款潮流简约半袖冰丝T恤休闲短裤一套搭配">
+                      </a>
+                      <div class="commodity-items-info-right">
+                          <div class="commodity-items-info-title">
+                            <a href="javascript:;">【狂欢价】运动套装男士夏季运动套装男士夏季运动套装男士夏季运动套装男士夏季运动套装男士夏季2021新款潮流简约半袖冰丝T恤休闲短裤一套搭配</a>
+                          </div> 
+                          <div class="commodity-items-promo-logos"></div>
+                          <div class="commodity-items-icon-list">
+                            <a href="javascript:;"></a>
+                            <a href="javascript:;"></a>
+                            <a href="javascript:;"></a>
+                          </div>                       
+                      </div>
+                    </div>
+                    <div class="commodity-items-update-kind"></div>
+                    <div class="commodity-items-total"></div>
+                    <div class="commodity-items-num"></div>
+                    <div class="commodity-items-price"></div>
+                    <div class="commodity-items-setting"></div>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+   <!-- footer部分结构设计 -->
+   <footer id="footer">
+    <!-- <div class="service-link-box">
+        <div class="con">
+          <a href="javascript:;"></a>
+          <a href="javascript:;"></a>
+          <a href="javascript:;"></a>
+          <a href="javascript:;"></a>
+        </div>
+    </div> -->
+    <div class="footer-nav-box">
+      <ul class="con">
+        <li>
+          <dl>
+            <dt>购物指南</dt>
+            <dd>
+              <a href="javascript:;">免费注册</a>
+            </dd>
+            <dd>
+              <a href="javascript:;">开通支付宝</a>
+            </dd>
+            <dd>
+              <a href="javascript:;">支付宝充值</a>
+            </dd>
+          </dl>
+        </li>
+        <li>
+          <dl>
+            <dt>天猫保障</dt>
+            <dd>
+              <a href="javascript:;">发票保障</a>
+            </dd>
+            <dd>
+              <a href="javascript:;">售后规则</a>
+            </dd>
+            <dd>
+              <a href="javascript:;">物流时效保障</a>
+            </dd>
+          </dl>
+        </li>
+        <li>
+          <dl>
+            <dt>支付方式</dt>
+            <dd>
+              <a href="javascript:;">快捷支付</a>
+            </dd>
+            <dd>
+              <a href="javascript:;">信用卡</a>
+            </dd>
+            <dd>
+              <a href="javascript:;">余额宝</a>
+            </dd>
+            <dd>
+              <a href="javascript:;">蚂蚁花呗</a>
+            </dd>
+          </dl>
+        </li>
+        <li>
+          <dl>
+            <dt>商家服务</dt>
+            <dd>
+              <a href="javascript:;">天猫规则</a>
+            </dd>
+            <dd>
+              <a href="javascript:;">商家入驻</a>
+            </dd>
+            <dd>
+              <a href="javascript:;">商家中心</a>
+            </dd>
+            <dd>
+              <a href="javascript:;">天猫必修课</a>
+            </dd>
+            <dd>
+              <a href="javascript:;">瞄言喵语</a>
+            </dd>
+            <dd>
+              <a href="javascript:;">运营服务</a>
+            </dd>
+          </dl>
+        </li>
+        <li>
+          <dl>
+            <dt>手机天猫</dt>
+          <dd>
+            <a href="javascript:;">
+              <img src="../src/img/10090.png" alt="手机天猫" title="手机天猫">
+            </a>
+          </dd>
+          </dl>
+        </li>
+      </ul>
+    </div>
+    <div class="footer-link-box">
+      <div class="con">
+        <p class="p1">
+          <a href="javascript:;">关于天猫</a>
+          <a href="javascript:;">商家服务大厅</a>
+          <a href="javascript:;">开发平台</a>
+          <a href="javascript:;">诚聘英才</a>
+          <a href="javascript:;">联系我们</a>
+          <a href="javascript:;">网站合作</a>
+          <a href="javascript:;">法律声明</a>
+          <a href="javascript:;">隐私权政策</a>
+          <a href="javascript:;">知识产权</a>
+          <a href="javascript:;">廉正举报</a>
+          <a href="javascript:;">不当竞争举报</a>
+        </p>
+        <p class="p1">
+          <a href="javascript:;">阿里巴巴集团</a>
+          <a href="javascript:;">淘宝网</a>
+          <a href="javascript:;">天猫</a>
+          <a href="javascript:;">聚划算</a>
+          <a href="javascript:;">全球速卖通</a>
+          <a href="javascript:;">阿里巴巴国际交易市场</a>
+          <a href="javascript:;">1688</a>
+          <a href="javascript:;">阿里妈妈</a>
+          <a href="javascript:;">飞猪</a>
+          <a href="javascript:;">阿里云计算</a>
+          <a href="javascript:;">AliOS</a>
+          <a href="javascript:;">阿里通信</a>
+          <a href="javascript:;">万网</a>
+          <a href="javascript:;">高德</a>
+          <a href="javascript:;">UC</a>
+          <a href="javascript:;">友盟</a>
+          <a href="javascript:;">虾米</a>
+          <a href="javascript:;">钉钉</a>
+          <a href="javascript:;">支付宝</a>
+          <a href="javascript:;">阿里安全</a>
+        </p>
+        <div class="p2">
+          <a href="javascript:;">增值电信业务经营许可证：浙B2-20110446</a><span>市场名称登记证：工商网市字3301004119号</span>
+          <span>出版物网络交易平台服务经营备案证： 新出发浙备字第2019002号</span>
+          <span>互联网违法和不良信息举报电话：0571-81683755 jubao.tb@service.taobao.com</span>
+          <a href="javascript:;">中国互联网举报中心</a>
+          <a href="javascript:;">中国扫黄打非网</a>
+          <a href="javascript:;">全国文化和旅游市场网上举报投诉处理系统</a>
+          <a href="javascript:;">全国12315平台</a>
+          <a href="javascript:;">浙江省互联网违法和不良信息举报中心</a>
+          <a href="javascript:;">全网举报</a>
+          <p>互联网药品信息服务资质证书编号：<a href="javascript:;">浙-（经营性）-2017-0005</a></p>
+          <a href="javascript:;">
+            <img src="../src/img/10089.gif" alt="">
+            浙公网安备 33010002000120号
+          </a>
+          <span>医疗器械网络交易服务第三方平台备案：（浙）网械平台备字[2018]第00002号</span>
+          <p>
+            <span>网络文化经营许可证：浙网文 [2021]1668-073号</span>
+            <a href="javascript:;">
+              <img src="../src/img/10083.gif" alt="">
+            </a>
+          </p>
+          <span>医疗器械网络交易服务第三方平台备案：（浙）网械平台备字[2018]第00002号</span>
+          <a href="javascript:;">12318举报</a>
+          <a href="javascript:;">浙B2-20110446-1</a>
+          <i>© 2003-现在 TMALL.COM 版权所有</i>
+        </div>
+        <div class="p3">
+          <a href="javascript:;"><img src="../src/img/10084.jpg" alt=""></a>
+          <a href="javascript:;"><img src="../src/img/10085.png" alt=""></a>
+          <a href="javascript:;"><img src="../src/img/10086.png" alt=""></a>
+          <a href="javascript:;"><img src="../src/img/10087.png" alt=""></a>
+          <a href="javascript:;"><img src="../src/img/10088.png" alt=""></a>
+        </div>
+        <div class="p4">
+          <a href="javascript:;"><img src="../src/img/10080.png" alt=""></a>
+        </div>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>

@@ -1,0 +1,166 @@
+#register-center {
+  height: 500px;
+  // background-color: red;
+  .reg-title {
+    height: 44px;
+    padding: 20px 0;
+    margin-bottom: 100px;
+    a {
+      display: inline-block;
+      height: 100%;
+      img {
+        height: 100%;
+      }
+    }
+    span {
+      font-size: 22px;
+      line-height: 44px;
+      color: #3c3c3c;
+      vertical-align: top;
+      margin-left: 6px;
+    }
+  }
+
+  .reg-form {
+    width: 480px;
+    min-height: 305px;
+    // background-color: pink;
+    margin: 0 auto;
+    user-select: none;
+    > div {
+      display: flex;
+      justify-content: flex-start;
+      font-size: 14px;
+      line-height: 36px;
+      margin-bottom: 20px;
+      .reg-left {
+        width: 120px;
+        height: 36px;
+        color: #111;
+        font-weight: normal;
+        text-align: right;
+        margin: 0;
+      }
+
+      .reg-right {
+        width: 320px;
+        margin-left: 10px;
+        input::placeholder {
+          color: #ccc;
+        }
+      }
+
+      .reg-phone-box {
+        position: relative;
+        .reg-phone-number-input {
+          width: 170px;
+          height: 36px;
+          border: 1px solid #d6d6d6;
+          border-radius: 3px;
+          padding: 0 10px 0 138px;
+        }
+        .country-select {
+          position: absolute;
+          width: 126px;
+          font-size: 14px;
+          line-height: 36px;
+          height: 36px;
+          left: 1px;
+          top: 1px;
+          border-right: 1px solid #d6d6d6;
+          div {
+            width: 106px;
+            padding: 0 10px;
+            // position: absolute;
+            > span {
+              display: inline-block;
+              vertical-align: top;
+              &:nth-of-type(1) {
+                width: 60px;
+                white-space: nowrap;
+                overflow: hidden;
+                text-overflow: ellipsis;
+              }
+              &:nth-of-type(2) {
+                width: 40px;
+                text-align: right;
+              }
+            }
+          }
+
+          .country-select-list {
+            position: absolute;
+            left: -1px;
+            top: 34px;
+            z-index: 101;
+            border: 1px solid #d6d6d6;
+            padding: 5px 0;
+            width: 135px;
+            max-height: 200px;
+            // font-size: 14px;
+            line-height: 22px;
+            overflow: auto;
+            background-color: #fff;
+            .active {
+              background-color: #ccc;
+            }
+          }
+        }
+
+      }
+
+      .reg-verification-box {
+        position: relative;
+        .reg-verification-code-input {
+          width: 226px;
+          height: 36px;
+          border: 1px solid #d6d6d6;
+          border-radius: 3px;
+          padding: 0 82px 0 10px;
+        }
+        a {
+          position: absolute;
+          top: 1px;
+          right: 11px;
+          color: #ff5000;
+        }
+      }
+
+      .reg-btn {
+        border: none;
+        border-radius: 3px;
+        color: #fff;
+        font-size: 14px;
+        line-height: 36px;
+        letter-spacing: 10px;
+        background: linear-gradient(to right, #f90, #ff5000);
+        opacity: 0.6;
+        cursor: text;
+      }
+
+      .reg-agreement {
+        display: flex;
+        justify-content: flex-start;
+        font-size: 12px;
+        line-height: 20px;
+        > label {
+          font-weight: normal;
+          margin-left: 10px;
+          user-select: none;
+          > a {
+            color: #fd6020;
+          }
+        }
+      }
+    }
+    p {
+      width: 440px;
+      text-align: right;
+      margin-left: 10px;
+      user-select: none;
+      >a {
+        color: #fd6020;
+      }
+    }
+  }
+}

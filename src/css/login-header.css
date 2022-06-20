@@ -1,0 +1,12 @@
+@charset 'utf-8';
+#header {
+  padding: 10px 0 22px;
+}
+#header > a {
+  display: inline-block;
+  height: 43px;
+}
+#header > a img {
+  width: 186px;
+  height: 26px;
+}

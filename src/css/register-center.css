@@ -1,0 +1,154 @@
+#register-center {
+  height: 500px;
+}
+#register-center .reg-title {
+  height: 44px;
+  padding: 20px 0;
+  margin-bottom: 100px;
+}
+#register-center .reg-title a {
+  display: inline-block;
+  height: 100%;
+}
+#register-center .reg-title a img {
+  height: 100%;
+}
+#register-center .reg-title span {
+  font-size: 22px;
+  line-height: 44px;
+  color: #3c3c3c;
+  vertical-align: top;
+  margin-left: 6px;
+}
+#register-center .reg-form {
+  width: 480px;
+  min-height: 305px;
+  margin: 0 auto;
+  user-select: none;
+}
+#register-center .reg-form > div {
+  display: flex;
+  justify-content: flex-start;
+  font-size: 14px;
+  line-height: 36px;
+  margin-bottom: 20px;
+}
+#register-center .reg-form > div .reg-left {
+  width: 120px;
+  height: 36px;
+  color: #111;
+  font-weight: normal;
+  text-align: right;
+  margin: 0;
+}
+#register-center .reg-form > div .reg-right {
+  width: 320px;
+  margin-left: 10px;
+}
+#register-center .reg-form > div .reg-right input::placeholder {
+  color: #ccc;
+}
+#register-center .reg-form > div .reg-phone-box {
+  position: relative;
+}
+#register-center .reg-form > div .reg-phone-box .reg-phone-number-input {
+  width: 170px;
+  height: 36px;
+  border: 1px solid #d6d6d6;
+  border-radius: 3px;
+  padding: 0 10px 0 138px;
+}
+#register-center .reg-form > div .reg-phone-box .country-select {
+  position: absolute;
+  width: 126px;
+  font-size: 14px;
+  line-height: 36px;
+  height: 36px;
+  left: 1px;
+  top: 1px;
+  border-right: 1px solid #d6d6d6;
+}
+#register-center .reg-form > div .reg-phone-box .country-select div {
+  width: 106px;
+  padding: 0 10px;
+}
+#register-center .reg-form > div .reg-phone-box .country-select div > span {
+  display: inline-block;
+  vertical-align: top;
+}
+#register-center .reg-form > div .reg-phone-box .country-select div > span:nth-of-type(1) {
+  width: 60px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+#register-center .reg-form > div .reg-phone-box .country-select div > span:nth-of-type(2) {
+  width: 40px;
+  text-align: right;
+}
+#register-center .reg-form > div .reg-phone-box .country-select .country-select-list {
+  position: absolute;
+  left: -1px;
+  top: 34px;
+  z-index: 101;
+  border: 1px solid #d6d6d6;
+  padding: 5px 0;
+  width: 135px;
+  max-height: 200px;
+  line-height: 22px;
+  overflow: auto;
+  background-color: #fff;
+}
+#register-center .reg-form > div .reg-phone-box .country-select .country-select-list .active {
+  background-color: #ccc;
+}
+#register-center .reg-form > div .reg-verification-box {
+  position: relative;
+}
+#register-center .reg-form > div .reg-verification-box .reg-verification-code-input {
+  width: 226px;
+  height: 36px;
+  border: 1px solid #d6d6d6;
+  border-radius: 3px;
+  padding: 0 82px 0 10px;
+}
+#register-center .reg-form > div .reg-verification-box a {
+  position: absolute;
+  top: 1px;
+  right: 11px;
+  color: #ff5000;
+}
+#register-center .reg-form > div .reg-btn {
+  border: none;
+  border-radius: 3px;
+  color: #fff;
+  font-size: 14px;
+  line-height: 36px;
+  letter-spacing: 10px;
+  background: linear-gradient(to right, #f90, #ff5000);
+  opacity: 0.6;
+  cursor: text;
+}
+#register-center .reg-form > div .reg-agreement {
+  display: flex;
+  justify-content: flex-start;
+  font-size: 12px;
+  line-height: 20px;
+}
+#register-center .reg-form > div .reg-agreement > label {
+  font-weight: normal;
+  margin-left: 10px;
+  user-select: none;
+}
+#register-center .reg-form > div .reg-agreement > label > a {
+  color: #fd6020;
+}
+#register-center .reg-form p {
+  width: 440px;
+  text-align: right;
+  margin-left: 10px;
+  user-select: none;
+}
+#register-center .reg-form p > a {
+  color: #fd6020;
+}

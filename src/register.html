@@ -1,0 +1,509 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>天猫注册</title>
+  <!-- <link rel="stylesheet" href="../src/css/public.css"> -->
+  <!-- <link rel="stylesheet" href="../bootstrap-3.4.1/dist/css/bootstrap.min.css"> -->
+  <link rel="stylesheet" href="./css/font_3471526_trvd06d3pz/iconfont.css">
+  <link rel="stylesheet" href="../src/css/register.css">
+</head>
+
+<body>
+
+  <!-- header部分结构设计 -->
+  <header id="header">
+    <div class="con">
+      <!-- 头部导航左侧 -->
+      <ul class="header-left">
+        <li class="tmall-index">
+          <a href="./index.html">
+            <i class="iconfont icon-shouye red"></i>
+            天猫首页
+          </a>
+        </li>
+        <li class="hello-tmall">
+          瞄，欢迎来到天猫
+        </li>
+        <li class="login-place">
+          <a href="./login.html">请登录</a>
+        </li>
+        <li class="free-reg">
+          <a href="./register.html">免费注册</a>
+        </li>
+      </ul>
+      <!-- 头部导航右侧 -->
+      <ul class="header-right">
+        <li class="header-right-mytaobao dropdown">
+          <a href="javascript:;">
+            我的淘宝
+           
+          </a>
+          <i class="iconfont icon-sanjiaoxia carts"></i>
+          <ul class="dropdown-left">
+            <li>
+              <a href="javascript:;">已买到的宝贝</a>
+            </li>
+            <li>
+              <a href="javascript:;">已卖出的宝贝</a>
+            </li>
+          </ul>
+        </li>
+        <li class="header-right-shopping-car">
+          <a href="javascript:;">
+            <i class="iconfont icon-gouwuche red"></i>
+            购物车
+          </a>
+        </li>
+        <li class="header-right-favorites dropdown">
+          <a href="javascript:;">
+            收藏夹
+            
+          </a>
+          <i class="iconfont icon-sanjiaoxia carts"></i>
+          <ul class="dropdown-left">
+            <li><a href="javascript:;">收藏的宝贝</a></li>
+            <li><a href="javascript:;">收藏的店铺</a></li>
+          </ul>
+        </li>
+        <li class="phone-version dropdown">
+          <a href="javascript:;">
+            <i class="iconfont icon-shouji red"></i>
+            手机版
+          </a>
+        </li>
+        <li>
+          <a href="javascript:;">淘宝网</a>
+        </li>
+        <li>
+          <a href="javascript:;">网页无障碍</a>
+        </li>
+        <li class="dropdown">
+          <a href="javascript:;">
+            商家支持
+           
+          </a>
+          <i class="iconfont icon-sanjiaoxia carts"></i>
+          <ul class="dropdown-right">
+            <li class="merchants">
+              <h3>商家</h3>
+              <a href="javascript:;">商家中心</a>
+              <a href="javascript:;">天猫规则</a>
+              <a href="javascript:;">商家入驻</a>
+              <a href="javascript:;">运营服务</a>
+              <a href="javascript:;">商家品控</a>
+              <a href="javascript:;">商家工具</a>
+              <a href="javascript:;">天猫智库</a>
+              <a href="javascript:;">瞄言喵语</a>
+            </li>
+            <li>
+              <h3>帮助</h3>
+              <a href="javascript:;">商家服务大厅</a>
+              <a href="javascript:;">问商友</a>
+            </li>
+          </ul>
+        </li>
+        <li>
+          <a href="javascript:;">商家中心</a>
+        </li>
+      </ul>
+    </div>
+  </header>
+
+
+  <!-- 注册内容部分结构设计 -->
+  <main id="register-center">
+    <div class="con">
+      <h1 class="reg-title">
+        <a href="./index.html"><img src="./img/10006.png" alt="天猫网" title="天猫"></a>
+        <span>用户注册</span>
+      </h1>
+      <form action="./index.html" name="reg-form" class="reg-form" method="post">
+        <div>
+          <label for="reg-phone-number" class="reg-left">手机号码</label>
+          <div class="reg-right reg-phone-box">
+            <input type="text" name="reg-phone-number-input" class="reg-phone-number-input" placeholder="请输入你的手机号码">
+            <div class="country-select">
+              <div class="show-country">
+                <span>巴勒斯坦</span>
+                <span>+970</span>
+              </div>
+
+              <div class="country-select-list" style="display:none;">
+                <div class="country-select-list-item active"><span>中国大陆</span><span>+86</span></div>
+                <div class="country-select-list-item"><span>中国香港</span><span>+852</span></div>
+                <div class="country-select-list-item"><span>中国澳门</span><span>+853</span></div>
+                <div class="country-select-list-item"><span>中国台湾</span><span>+886</span></div>
+                <div class="country-select-list-item"><span>韩国</span><span>+82</span></div>
+                <div class="country-select-list-item"><span>日本</span><span>+81</span></div>
+                <div class="country-select-list-item"><span>美国</span><span>+1</span></div>
+                <div class="country-select-list-item"><span>加拿大</span><span>+1</span></div>
+                <div class="country-select-list-item"><span>英国</span><span>+44</span></div>
+                <div class="country-select-list-item"><span>澳大利亚</span><span>+61</span></div>
+                <div class="country-select-list-item"><span>新加坡</span><span>+65</span></div>
+                <div class="country-select-list-item"><span>马来西亚</span><span>+60</span></div>
+                <div class="country-select-list-item"><span>泰国</span><span>+66</span></div>
+                <div class="country-select-list-item"><span>越南</span><span>+84</span></div>
+                <div class="country-select-list-item"><span>菲律宾</span><span>+63</span></div>
+                <div class="country-select-list-item"><span>印度尼西亚</span><span>+62</span></div>
+                <div class="country-select-list-item"><span>德国</span><span>+49</span></div>
+                <div class="country-select-list-item"><span>意大利</span><span>+39</span></div>
+                <div class="country-select-list-item"><span>法国</span><span>+33</span></div>
+                <div class="country-select-list-item"><span>俄罗斯</span><span>+7</span></div>
+                <div class="country-select-list-item"><span>新西兰</span><span>+64</span></div>
+                <div class="country-select-list-item"><span>荷兰</span><span>+31</span></div>
+                <div class="country-select-list-item"><span>瑞典</span><span>+46</span></div>
+                <div class="country-select-list-item"><span>乌克兰</span><span>+380</span></div>
+                <div class="country-select-list-item"><span>阿联酋</span><span>+971</span></div>
+                <div class="country-select-list-item"><span>阿根廷</span><span>+54</span></div>
+                <div class="country-select-list-item"><span>奥地利</span><span>+43</span></div>
+                <div class="country-select-list-item"><span>比利时</span><span>+32</span></div>
+                <div class="country-select-list-item"><span>保加利亚</span><span>+359</span></div>
+                <div class="country-select-list-item"><span>巴西</span><span>+55</span></div>
+                <div class="country-select-list-item"><span>巴哈马</span><span>+1242</span></div>
+                <div class="country-select-list-item"><span>白俄罗斯</span><span>+375</span></div>
+                <div class="country-select-list-item"><span>伯利兹</span><span>+501</span></div>
+                <div class="country-select-list-item"><span>瑞士</span><span>+41</span></div>
+                <div class="country-select-list-item"><span>智利</span><span>+56</span></div>
+                <div class="country-select-list-item"><span>哥伦比亚</span><span>+57</span></div>
+                <div class="country-select-list-item"><span>丹麦</span><span>+45</span></div>
+                <div class="country-select-list-item"><span>爱沙尼亚</span><span>+372</span></div>
+                <div class="country-select-list-item"><span>埃及</span><span>+20</span></div>
+                <div class="country-select-list-item"><span>西班牙</span><span>+34</span></div>
+                <div class="country-select-list-item"><span>芬兰</span><span>+358</span></div>
+                <div class="country-select-list-item"><span>匈牙利</span><span>+36</span></div>
+                <div class="country-select-list-item"><span>希腊</span><span>+30</span></div>
+                <div class="country-select-list-item"><span>爱尔兰</span><span>+353</span></div>
+                <div class="country-select-list-item"><span>以色列</span><span>+972</span></div>
+                <div class="country-select-list-item"><span>印度</span><span>+91</span></div>
+                <div class="country-select-list-item"><span>约旦</span><span>+962</span></div>
+                <div class="country-select-list-item"><span>吉尔吉斯斯坦</span><span>+996</span></div>
+                <div class="country-select-list-item"><span>柬埔寨</span><span>+855</span></div>
+                <div class="country-select-list-item"><span>斯里兰卡</span><span>+94</span></div>
+                <div class="country-select-list-item"><span>立陶宛</span><span>+370</span></div>
+                <div class="country-select-list-item"><span>卢森堡</span><span>+352</span></div>
+                <div class="country-select-list-item"><span>摩洛哥</span><span>+212</span></div>
+                <div class="country-select-list-item"><span>蒙古</span><span>+976</span></div>
+                <div class="country-select-list-item"><span>马尔代夫</span><span>+960</span></div>
+                <div class="country-select-list-item"><span>尼日利亚</span><span>+234</span></div>
+                <div class="country-select-list-item"><span>墨西哥</span><span>+52</span></div>
+                <div class="country-select-list-item"><span>挪威</span><span>+47</span></div>
+                <div class="country-select-list-item"><span>巴拿马</span><span>+507</span></div>
+                <div class="country-select-list-item"><span>秘鲁</span><span>+51</span></div>
+                <div class="country-select-list-item"><span>波兰</span><span>+48</span></div>
+                <div class="country-select-list-item"><span>葡萄牙</span><span>+351</span></div>
+                <div class="country-select-list-item"><span>卡塔尔</span><span>+974</span></div>
+                <div class="country-select-list-item"><span>罗马尼亚</span><span>+40</span></div>
+                <div class="country-select-list-item"><span>塞尔维亚</span><span>+381</span></div>
+                <div class="country-select-list-item"><span>塞舌尔</span><span>+248</span></div>
+                <div class="country-select-list-item"><span>沙特阿拉伯</span><span>+966</span></div>
+                <div class="country-select-list-item"><span>突尼斯</span><span>+216</span></div>
+                <div class="country-select-list-item"><span>土耳其</span><span>+90</span></div>
+                <div class="country-select-list-item"><span>委内瑞拉</span><span>+58</span></div>
+                <div class="country-select-list-item"><span>英属维尔京群岛</span><span>+1284</span></div>
+                <div class="country-select-list-item"><span>南非</span><span>+27</span></div>
+                <div class="country-select-list-item"><span>阿尔巴尼亚</span><span>+355</span></div>
+                <div class="country-select-list-item"><span>安哥拉</span><span>+244</span></div>
+                <div class="country-select-list-item"><span>阿塞拜疆</span><span>+994</span></div>
+                <div class="country-select-list-item"><span>布基纳法索</span><span>+226</span></div>
+                <div class="country-select-list-item"><span>巴林</span><span>+973</span></div>
+                <div class="country-select-list-item"><span>贝宁</span><span>+229</span></div>
+                <div class="country-select-list-item"><span>文莱</span><span>+673</span></div>
+                <div class="country-select-list-item"><span>玻利维亚</span><span>+591</span></div>
+                <div class="country-select-list-item"><span>喀麦隆</span><span>+237</span></div>
+                <div class="country-select-list-item"><span>哥斯达黎加</span><span>+506</span></div>
+                <div class="country-select-list-item"><span>佛得角</span><span>+238</span></div>
+                <div class="country-select-list-item"><span>塞浦路斯</span><span>+357</span></div>
+                <div class="country-select-list-item"><span>吉布提</span><span>+253</span></div>
+                <div class="country-select-list-item"><span>加蓬</span><span>+241</span></div>
+                <div class="country-select-list-item"><span>格林纳达</span><span>+1473</span></div>
+                <div class="country-select-list-item"><span>格鲁吉亚</span><span>+995</span></div>
+                <div class="country-select-list-item"><span>冈比亚</span><span>+220</span></div>
+                <div class="country-select-list-item"><span>几内亚</span><span>+224</span></div>
+                <div class="country-select-list-item"><span>赤道几内亚</span><span>+240</span></div>
+                <div class="country-select-list-item"><span>危地马拉</span><span>+502</span></div>
+                <div class="country-select-list-item"><span>几内亚比绍</span><span>+245</span></div>
+                <div class="country-select-list-item"><span>圭亚那</span><span>+592</span></div>
+                <div class="country-select-list-item"><span>洪都拉斯</span><span>+504</span></div>
+                <div class="country-select-list-item"><span>克罗地亚</span><span>+385</span></div>
+                <div class="country-select-list-item"><span>牙买加</span><span>+1876</span></div>
+                <div class="country-select-list-item"><span>肯尼亚</span><span>+254</span></div>
+                <div class="country-select-list-item"><span>科摩罗</span><span>+269</span></div>
+                <div class="country-select-list-item"><span>科威特</span><span>+965</span></div>
+                <div class="country-select-list-item"><span>开曼群岛</span><span>+1345</span></div>
+                <div class="country-select-list-item"><span>莱索托</span><span>+266</span></div>
+                <div class="country-select-list-item"><span>拉脱维亚</span><span>+371</span></div>
+                <div class="country-select-list-item"><span>摩尔多瓦</span><span>+373</span></div>
+                <div class="country-select-list-item"><span>马达加斯加</span><span>+261</span></div>
+                <div class="country-select-list-item"><span>马里</span><span>+223</span></div>
+                <div class="country-select-list-item"><span>毛里塔尼亚</span><span>+222</span></div>
+                <div class="country-select-list-item"><span>毛里求斯</span><span>+230</span></div>
+                <div class="country-select-list-item"><span>马拉维</span><span>+265</span></div>
+                <div class="country-select-list-item"><span>莫桑比克</span><span>+258</span></div>
+                <div class="country-select-list-item"><span>纳米比亚</span><span>+264</span></div>
+                <div class="country-select-list-item"><span>尼日尔</span><span>+227</span></div>
+                <div class="country-select-list-item"><span>尼加拉瓜</span><span>+505</span></div>
+                <div class="country-select-list-item"><span>阿曼</span><span>+968</span></div>
+                <div class="country-select-list-item"><span>巴布亚新几内亚</span><span>+675</span></div>
+                <div class="country-select-list-item"><span>巴勒斯坦</span><span>+970</span></div>
+                <div class="country-select-list-item"><span>卢旺达</span><span>+250</span></div>
+                <div class="country-select-list-item"><span>斯洛文尼亚</span><span>+386</span></div>
+                <div class="country-select-list-item"><span>斯洛伐克</span><span>+421</span></div>
+                <div class="country-select-list-item"><span>塞拉利昂</span><span>+232</span></div>
+                <div class="country-select-list-item"><span>塞内加尔</span><span>+221</span></div>
+                <div class="country-select-list-item"><span>苏里南</span><span>+597</span></div>
+                <div class="country-select-list-item"><span>萨尔瓦多</span><span>+503</span></div>
+                <div class="country-select-list-item"><span>斯威士兰</span><span>+268</span></div>
+                <div class="country-select-list-item"><span>乍得</span><span>+235</span></div>
+                <div class="country-select-list-item"><span>多哥</span><span>+228</span></div>
+                <div class="country-select-list-item"><span>塔吉克斯坦</span><span>+992</span></div>
+                <div class="country-select-list-item"><span>土库曼斯坦</span><span>+993</span></div>
+                <div class="country-select-list-item"><span>特立尼达和多巴哥</span><span>+1868</span></div>
+                <div class="country-select-list-item"><span>坦桑尼亚</span><span>+255</span></div>
+                <div class="country-select-list-item"><span>乌干达</span><span>+256</span></div>
+                <div class="country-select-list-item"><span>乌拉圭</span><span>+598</span></div>
+                <div class="country-select-list-item"><span>乌兹别克斯坦</span><span>+998</span></div>
+                <div class="country-select-list-item"><span>也门</span><span>+967</span></div>
+                <div class="country-select-list-item"><span>赞比亚</span><span>+260</span></div>
+                <div class="country-select-list-item"><span>津巴布韦</span><span>+263</span></div>
+                <div class="country-select-list-item"><span>安道尔共和国</span><span>+376</span></div>
+                <div class="country-select-list-item"><span>阿富汗</span><span>+93</span></div>
+                <div class="country-select-list-item"><span>亚美尼亚</span><span>+374</span></div>
+                <div class="country-select-list-item"><span>波斯尼亚和黑塞哥维那</span><span>+387</span></div>
+                <div class="country-select-list-item"><span>孟加拉国</span><span>+880</span></div>
+                <div class="country-select-list-item"><span>布隆迪</span><span>+257</span></div>
+                <div class="country-select-list-item"><span>博茨瓦纳</span><span>+267</span></div>
+                <div class="country-select-list-item"><span>刚果(金)</span><span>+243</span></div>
+                <div class="country-select-list-item"><span>中非</span><span>+236</span></div>
+                <div class="country-select-list-item"><span>刚果(布)</span><span>+242</span></div>
+                <div class="country-select-list-item"><span>科特迪瓦</span><span>+225</span></div>
+                <div class="country-select-list-item"><span>库拉索岛</span><span>+599</span></div>
+                <div class="country-select-list-item"><span>多米尼加共和国</span><span>+1809</span></div>
+                <div class="country-select-list-item"><span>捷克共和国</span><span>+420</span></div>
+                <div class="country-select-list-item"><span>阿尔及利亚</span><span>+213</span></div>
+                <div class="country-select-list-item"><span>厄瓜多尔</span><span>+593</span></div>
+                <div class="country-select-list-item"><span>加纳</span><span>+233</span></div>
+                <div class="country-select-list-item"><span>伊拉克</span><span>+964</span></div>
+                <div class="country-select-list-item"><span>哈萨克斯坦</span><span>+7</span></div>
+                <div class="country-select-list-item"><span>老挝</span><span>+856</span></div>
+                <div class="country-select-list-item"><span>黎巴嫩</span><span>+961</span></div>
+                <div class="country-select-list-item"><span>利比里亚</span><span>+231</span></div>
+                <div class="country-select-list-item"><span>利比亚</span><span>+218</span></div>
+                <div class="country-select-list-item"><span>黑山共和国</span><span>+382</span></div>
+                <div class="country-select-list-item"><span>圣马丁</span><span>+590</span></div>
+                <div class="country-select-list-item"><span>马其顿</span><span>+389</span></div>
+                <div class="country-select-list-item"><span>缅甸</span><span>+95</span></div>
+                <div class="country-select-list-item"><span>巴基斯坦</span><span>+92</span></div>
+                <div class="country-select-list-item"><span>波多黎各</span><span>+1787</span></div>
+                <div class="country-select-list-item"><span>索马里</span><span>+252</span></div>
+                <div class="country-select-list-item"><span>圣文森特和格林纳丁斯</span><span>+1784</span></div>
+                <div class="country-select-list-item"><span>科索沃</span><span>+383</span></div>
+                <div class="country-select-list-item"><span>尼泊尔</span><span>+977</span></div>
+                <div class="country-select-list-item"><span>马耳他</span><span>+356</span></div>
+              </div>
+
+            </div>
+          </div>
+        </div>
+        <div>
+          <label for="verification-code" class="reg-left">验证码</label>
+          <div class="reg-right reg-verification-box">
+            <input type="text" name="reg-verification-code-input" class="reg-verification-code-input"
+              maxlength="6" placeholder="请输入效验码">
+            <a href="javascript:;">获取验证码</a>
+          </div>
+        </div>
+        <div>
+          <div class="reg-left"></div>
+          <button type="submit" class="reg-right reg-btn" disabled>注册</button>
+        </div>
+        <div>
+          <div class="reg-left"></div>
+          <div class="reg-right reg-agreement">
+            <input type="checkbox" name="reg-agreement-checkbox" id="reg-agreement-checkbox">
+            <label for="reg-agreement-checkbox">已阅读并同意以下协议<a href="javascript:;">淘宝服务平台协议</a>、<a href="javascript:;">隐私权政策</a>、<a
+                href="javascript:;">法律声明</a>、<a href="javascript:;">支付宝及客户端服务协议</a></label>
+          </div>
+        </div>
+        <p><a href="javascript:;">切换企业账户注册</a></p>
+      </form>
+    </div>
+  </main>
+
+
+  <!-- footer部分结构设计 -->
+  <footer id="footer">
+    <div class="service-link-box">
+        <div class="con">
+          <a href="javascript:;"></a>
+          <a href="javascript:;"></a>
+          <a href="javascript:;"></a>
+          <a href="javascript:;"></a>
+        </div>
+    </div>
+    <div class="footer-nav-box">
+      <ul class="con">
+        <li>
+          <dl>
+            <dt>购物指南</dt>
+            <dd>
+              <a href="javascript:;">免费注册</a>
+            </dd>
+            <dd>
+              <a href="javascript:;">开通支付宝</a>
+            </dd>
+            <dd>
+              <a href="javascript:;">支付宝充值</a>
+            </dd>
+          </dl>
+        </li>
+        <li>
+          <dl>
+            <dt>天猫保障</dt>
+            <dd>
+              <a href="javascript:;">发票保障</a>
+            </dd>
+            <dd>
+              <a href="javascript:;">售后规则</a>
+            </dd>
+            <dd>
+              <a href="javascript:;">物流时效保障</a>
+            </dd>
+          </dl>
+        </li>
+        <li>
+          <dl>
+            <dt>支付方式</dt>
+            <dd>
+              <a href="javascript:;">快捷支付</a>
+            </dd>
+            <dd>
+              <a href="javascript:;">信用卡</a>
+            </dd>
+            <dd>
+              <a href="javascript:;">余额宝</a>
+            </dd>
+            <dd>
+              <a href="javascript:;">蚂蚁花呗</a>
+            </dd>
+          </dl>
+        </li>
+        <li>
+          <dl>
+            <dt>商家服务</dt>
+            <dd>
+              <a href="javascript:;">天猫规则</a>
+            </dd>
+            <dd>
+              <a href="javascript:;">商家入驻</a>
+            </dd>
+            <dd>
+              <a href="javascript:;">商家中心</a>
+            </dd>
+            <dd>
+              <a href="javascript:;">天猫必修课</a>
+            </dd>
+            <dd>
+              <a href="javascript:;">瞄言喵语</a>
+            </dd>
+            <dd>
+              <a href="javascript:;">运营服务</a>
+            </dd>
+          </dl>
+        </li>
+        <li>
+          <dl>
+            <dt>手机天猫</dt>
+          <dd>
+            <a href="javascript:;">
+              <img src="../src/img/10090.png" alt="手机天猫" title="手机天猫">
+            </a>
+          </dd>
+          </dl>
+        </li>
+      </ul>
+    </div>
+    <div class="footer-link-box">
+      <div class="con">
+        <p class="p1">
+          <a href="javascript:;">关于天猫</a>
+          <a href="javascript:;">商家服务大厅</a>
+          <a href="javascript:;">开发平台</a>
+          <a href="javascript:;">诚聘英才</a>
+          <a href="javascript:;">联系我们</a>
+          <a href="javascript:;">网站合作</a>
+          <a href="javascript:;">法律声明</a>
+          <a href="javascript:;">隐私权政策</a>
+          <a href="javascript:;">知识产权</a>
+          <a href="javascript:;">廉正举报</a>
+          <a href="javascript:;">不当竞争举报</a>
+        </p>
+        <p class="p1">
+          <a href="javascript:;">阿里巴巴集团</a>
+          <a href="javascript:;">淘宝网</a>
+          <a href="javascript:;">天猫</a>
+          <a href="javascript:;">聚划算</a>
+          <a href="javascript:;">全球速卖通</a>
+          <a href="javascript:;">阿里巴巴国际交易市场</a>
+          <a href="javascript:;">1688</a>
+          <a href="javascript:;">阿里妈妈</a>
+          <a href="javascript:;">飞猪</a>
+          <a href="javascript:;">阿里云计算</a>
+          <a href="javascript:;">AliOS</a>
+          <a href="javascript:;">阿里通信</a>
+          <a href="javascript:;">万网</a>
+          <a href="javascript:;">高德</a>
+          <a href="javascript:;">UC</a>
+          <a href="javascript:;">友盟</a>
+          <a href="javascript:;">虾米</a>
+          <a href="javascript:;">钉钉</a>
+          <a href="javascript:;">支付宝</a>
+          <a href="javascript:;">阿里安全</a>
+        </p>
+        <div class="p2">
+          <a href="javascript:;">增值电信业务经营许可证：浙B2-20110446</a><span>市场名称登记证：工商网市字3301004119号</span>
+          <span>出版物网络交易平台服务经营备案证： 新出发浙备字第2019002号</span>
+          <span>互联网违法和不良信息举报电话：0571-81683755 jubao.tb@service.taobao.com</span>
+          <a href="javascript:;">中国互联网举报中心</a>
+          <a href="javascript:;">中国扫黄打非网</a>
+          <a href="javascript:;">全国文化和旅游市场网上举报投诉处理系统</a>
+          <a href="javascript:;">全国12315平台</a>
+          <a href="javascript:;">浙江省互联网违法和不良信息举报中心</a>
+          <a href="javascript:;">全网举报</a>
+          <p>互联网药品信息服务资质证书编号：<a href="javascript:;">浙-（经营性）-2017-0005</a></p>
+          <a href="javascript:;">
+            <img src="../src/img/10089.gif" alt="">
+            浙公网安备 33010002000120号
+          </a>
+          <span>医疗器械网络交易服务第三方平台备案：（浙）网械平台备字[2018]第00002号</span>
+          <p>
+            <span>网络文化经营许可证：浙网文 [2021]1668-073号</span>
+            <a href="javascript:;">
+              <img src="../src/img/10083.gif" alt="">
+            </a>
+          </p>
+          <span>医疗器械网络交易服务第三方平台备案：（浙）网械平台备字[2018]第00002号</span>
+          <a href="javascript:;">12318举报</a>
+          <a href="javascript:;">浙B2-20110446-1</a>
+          <i>© 2003-现在 TMALL.COM 版权所有</i>
+        </div>
+        <div class="p3">
+          <a href="javascript:;"><img src="../src/img/10084.jpg" alt=""></a>
+          <a href="javascript:;"><img src="../src/img/10085.png" alt=""></a>
+          <a href="javascript:;"><img src="../src/img/10086.png" alt=""></a>
+          <a href="javascript:;"><img src="../src/img/10087.png" alt=""></a>
+          <a href="javascript:;"><img src="../src/img/10088.png" alt=""></a>
+        </div>
+        <div class="p4">
+          <a href="javascript:;"><img src="../src/img/10080.png" alt=""></a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+</body>
+
+</html>

@@ -1,0 +1,156 @@
+#center {
+  box-sizing: border-box;
+  background: url(../img/10115.jpg) center / cover no-repeat;
+}
+#center .con {
+  height: 600px;
+  position: relative;
+}
+#center .con .login-box {
+  width: 300px;
+  min-height: 300px;
+  padding: 25px;
+  background-color: hsla(0, 0%, 100%, 0.9);
+  position: absolute;
+  right: 60px;
+  top: 120px;
+}
+#center .con .login-box .login-method-list {
+  width: 52px;
+  height: 52px;
+  position: absolute;
+  right: 5px;
+  top: 5px;
+}
+#center .con .login-box .login-method-list .ewmLogin-btn {
+  border-width: 26px;
+  border-style: solid;
+  border-color: red red transparent transparent;
+}
+#center .con .login-box .login-method-list .inputLogin-btn {
+  border-width: 26px;
+  border-style: solid;
+  border-color: blue blue transparent transparent;
+}
+#center .con .login-box .tabs .tabs-list {
+  margin-bottom: 20px;
+}
+#center .con .login-box .tabs .tabs-list > a {
+  display: inline-block;
+  font-size: 16px;
+  color: #3c3c3c;
+  font-weight: 700;
+  line-height: 5px;
+  height: 18px;
+  margin: 9px 10px 0 0;
+  font-family: Microsoft YaHei, tahoma, arial, Hiragino Sans GB, "\5B8B\4F53", sans-serif;
+  position: relative;
+}
+#center .con .login-box .tabs .tabs-list .active::after {
+  content: '';
+  position: absolute;
+  width: 64px;
+  height: 3px;
+  background-color: #3c3c3c;
+  left: 0;
+  top: 18px;
+}
+#center .con .login-box .tabs .tabs-con .tabs-items a {
+  color: #6c6c6c;
+}
+#center .con .login-box .tabs .tabs-con .tabs-items .input-box {
+  position: relative;
+  margin-bottom: 20px;
+}
+#center .con .login-box .tabs .tabs-con .tabs-items .input-box .lab-info {
+  position: absolute;
+  left: 1px;
+  top: 1px;
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+  background-color: #ccc;
+  color: #fff;
+  text-align: center;
+  line-height: 40px;
+}
+#center .con .login-box .tabs .tabs-con .tabs-items .input-box .lab-info > i {
+  font-size: 24px;
+}
+#center .con .login-box .tabs .tabs-con .tabs-items .input-box .user-name,
+#center .con .login-box .tabs .tabs-con .tabs-items .input-box .user-password,
+#center .con .login-box .tabs .tabs-con .tabs-items .input-box .verification-code {
+  width: 248px;
+  height: 40px;
+  padding-left: 50px;
+  border: 1px solid #f1eeee;
+}
+#center .con .login-box .tabs .tabs-con .tabs-items .input-box .user-phone {
+  width: 188px;
+  height: 40px;
+  border: 1px solid #f1eeee;
+  padding-left: 110px;
+}
+#center .con .login-box .tabs .tabs-con .tabs-items .input-box .phone-address {
+  position: absolute;
+  appearance: none;
+  border: none;
+  width: 65px;
+  height: 40px;
+  padding: 0 14px 0 10px;
+  left: 40px;
+  background: url(../img/10120.png) 48px 8px/24px no-repeat;
+}
+#center .con .login-box .tabs .tabs-con .tabs-items .input-box .send-btn {
+  position: absolute;
+  right: 10px;
+  top: 0px;
+  height: 40px;
+}
+#center .con .login-box .tabs .tabs-con .tabs-items .input-box .send-btn a {
+  font-size: 12px;
+  color: #6c6c6c;
+  line-height: 40px;
+}
+#center .con .login-box .tabs .tabs-con .tabs-items .input-box .send-btn a:hover {
+  color: #f40;
+}
+#center .con .login-box .tabs .tabs-con .tabs-items .login-btn {
+  display: block;
+  width: 298px;
+  height: 38px;
+  background-color: #f40;
+  border: 1px solid #f40;
+  font-size: 16px;
+  text-align: center;
+  line-height: 38px;
+  color: #fff;
+  margin-bottom: 16px;
+}
+#center .con .login-box .tabs .tabs-con .tabs-items .other-login {
+  margin-bottom: 16px;
+}
+#center .con .login-box .tabs .tabs-con .tabs-items .other-login a > i {
+  font-size: 16px;
+  margin-right: 1px;
+}
+#center .con .login-box .tabs .tabs-con .tabs-items .other-login a:hover > span {
+  color: #f22e00;
+}
+#center .con .login-box .tabs .tabs-con .tabs-items .other-login .weibo-login > i {
+  color: #e52425;
+}
+#center .con .login-box .tabs .tabs-con .tabs-items .other-login .alipay-login > i {
+  color: #1ba9ee;
+}
+#center .con .login-box .tabs .tabs-con .tabs-items .account-setting {
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+}
+#center .con .login-box .tabs .tabs-con .tabs-items .account-setting a {
+  margin-left: 5px;
+}
+#center .con .login-box .tabs .tabs-con .tabs-items .account-setting a:hover {
+  color: #f40;
+}

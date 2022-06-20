@@ -1,0 +1,176 @@
+
+// login center区域样式设计
+#center {
+  box-sizing: border-box;
+  background: url(../img/10115.jpg) center/cover no-repeat;
+  .con {
+    height: 600px;
+    position: relative;
+    .login-box {
+      width: 300px;
+      min-height: 300px;
+      padding: 25px;
+      background-color: hsla(0,0%,100%,.9);
+      position: absolute;
+      right: 60px;
+      top: 120px;
+
+      .login-method-list {
+        width: 52px;
+        height: 52px;
+        // background-color: #000;
+        position: absolute;
+        right: 5px;
+        top: 5px;
+        .ewmLogin-btn {
+          border-width: 26px;
+          border-style: solid;
+          border-color: red red transparent transparent;         
+        }
+        .inputLogin-btn {
+          border-width: 26px;
+          border-style: solid;
+          border-color: blue blue transparent transparent;   
+        }
+      }
+      .tabs {
+        .tabs-list {
+          margin-bottom: 20px;
+          >a {
+            display: inline-block;
+            font-size: 16px;
+            color: #3c3c3c;
+            font-weight: 700;
+            line-height: 5px;
+            height: 18px;
+            margin: 9px 10px 0 0;
+            font-family: Microsoft YaHei,tahoma,arial,Hiragino Sans GB,"\5B8B\4F53",sans-serif;
+            position: relative;
+          }
+          .active::after {
+            content: '';
+            position: absolute;
+            width: 64px;
+            height: 3px;
+            background-color: #3c3c3c;
+            left: 0;
+            top: 18px;
+          }
+        }
+        
+        .tabs-con {
+          .tabs-items {
+           
+            a {
+              color: #6c6c6c;
+            }
+            .input-box {
+              position: relative;
+              margin-bottom: 20px;
+              .lab-info {
+                position: absolute;
+                left: 1px;
+                top: 1px;
+                display:inline-block;
+                width: 40px;
+                height: 40px;
+                background-color: #ccc;
+                color: #fff;
+                text-align: center;
+                line-height: 40px;
+                >i {
+                  font-size: 24px;
+                }
+              }
+              .user-name,.user-password,.verification-code{
+                width: 248px;
+                height: 40px;
+                padding-left: 50px;
+                border: 1px solid #f1eeee;
+              }
+              .user-phone {
+                width: 188px;
+                height: 40px;
+                border: 1px solid #f1eeee;
+                padding-left: 110px;
+              }
+  
+              .phone-address {
+                position: absolute;
+                appearance: none;
+                border: none;
+                width: 65px;
+                height: 40px;
+                padding: 0 14px 0 10px;
+                left: 40px;
+                background: url(../img/10120.png) 48px 8px/24px no-repeat;
+              }
+              .send-btn {
+                position: absolute;
+                right: 10px;
+                top: 0px;
+                height: 40px;
+                a {
+                  font-size: 12px;
+                  color: #6c6c6c;
+                  line-height: 40px;
+                  &:hover {
+                    color: #f40;
+                  }
+                }
+              }
+              
+            }
+  
+            .login-btn {
+              display: block;
+              width: 298px;
+              height: 38px;
+              background-color: #f40;
+              border: 1px solid #f40;
+              font-size: 16px;
+              text-align: center;
+              line-height: 38px;
+              color: #fff;
+              margin-bottom: 16px;
+            }
+  
+            .other-login {
+              margin-bottom: 16px;
+              a {
+               > i {
+                font-size: 16px;
+                margin-right: 1px;
+               }
+               &:hover > span {
+                color: #f22e00;
+               }
+              }
+  
+             .weibo-login > i {
+              color: #e52425;
+             }
+             .alipay-login > i {
+              color: #1ba9ee;
+             }
+            }
+  
+            .account-setting {
+              width: 100%;
+              display: flex;
+              justify-content: flex-end;
+              a {
+                margin-left: 5px;
+                &:hover {
+                  color: #f40;
+                }
+              }
+            }
+  
+          }
+        }
+      }
+    }
+   
+  }
+}

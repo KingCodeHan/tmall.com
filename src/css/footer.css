@@ -1,0 +1,99 @@
+@charset 'utf-8';
+#footer {
+  border-top: 1px solid #D1D7DC;
+}
+#footer .service-link-box {
+  margin: 25px 0;
+}
+#footer .service-link-box .con {
+  height: 100px;
+  display: flex;
+  justify-content: space-between;
+  background: url(../img/10111.jpg) 0 0/100% 100% no-repeat;
+}
+#footer .service-link-box .con > a {
+  width: 297px;
+  height: 100px;
+}
+#footer .footer-nav-box .con {
+  padding: 22px 0;
+  display: flex;
+  justify-content: flex-start;
+  background: url(../img/10112.png) 52px bottom / 68px 25px no-repeat;
+}
+#footer .footer-nav-box .con > li {
+  width: 238px;
+  padding-left: 52px;
+}
+#footer .footer-nav-box .con > li > dl {
+  text-align: left;
+}
+#footer .footer-nav-box .con > li > dl > dt {
+  font-size: 16px;
+  line-height: 30px;
+  color: #646464;
+  font-weight: 700;
+}
+#footer .footer-nav-box .con > li > dl > dd > a {
+  display: block;
+  line-height: 20px;
+  height: 20px;
+}
+#footer .footer-nav-box .con > li > dl > dd > a img {
+  width: 105px;
+  height: 105px;
+}
+#footer .footer-link-box {
+  border-top: 2px solid #FF0036;
+  background-color: #000;
+  padding-bottom: 20px;
+}
+#footer .footer-link-box .p1 {
+  font-size: 12px;
+  line-height: 35px;
+}
+#footer .footer-link-box .p1 a {
+  color: #fff;
+  margin-right: 3px;
+}
+#footer .footer-link-box .p2 {
+  color: #a4a4a4;
+}
+#footer .footer-link-box .p2 > p,
+#footer .footer-link-box .p2 > a,
+#footer .footer-link-box .p2 > span {
+  display: inline-block;
+  margin: 0 50px 5px 0;
+}
+#footer .footer-link-box .p2 > i {
+  font-style: normal;
+  display: block;
+  color: #686868;
+}
+#footer .footer-link-box .p2 img {
+  width: 20px;
+  height: 20px;
+}
+#footer .footer-link-box .p3 {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+#footer .footer-link-box .p3 > a {
+  display: inline-block;
+}
+#footer .footer-link-box .p4 {
+  margin-top: 20px;
+  text-align: center;
+}
+#footer .footer-link-box .p4 a {
+  display: inline-block;
+  background-color: #fff;
+}
+#footer .footer-link-box .p4 a > img {
+  width: 146px;
+  height: 71px;
+}
+#footer a:hover {
+  text-decoration: underline!important;
+}
