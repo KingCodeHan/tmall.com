@@ -492,6 +492,13 @@
   overflow: hidden;
   white-space: nowrap;
   text-overflow: ellipsis;
+  display: block;
+  height: 26px;
+  line-height: 26px;
+}
+#shopping-car .con .shopping-car-goods .car-goods-content .goods-groups .goods-groups-content .goods-groups-commodity-list .goods-groups-commodity-items .commodity-items-update-kind > p > img {
+  height: 100%;
+  margin-left: 10px;
 }
 #shopping-car .con .shopping-car-goods .car-goods-content .goods-groups .goods-groups-content .goods-groups-commodity-list .goods-groups-commodity-items .commodity-items-update-kind > i {
   display: none;
@@ -542,6 +549,7 @@
   background-color: #f0f0f0;
   border: 1px solid #e5e5e5;
   color: #444;
+  cursor: pointer;
 }
 #shopping-car .con .shopping-car-goods .car-goods-content .goods-groups .goods-groups-content .goods-groups-commodity-list .goods-groups-commodity-items .commodity-items-num > input {
   width: 39px;

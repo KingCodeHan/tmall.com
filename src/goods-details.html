@@ -7,6 +7,7 @@
   <title>商品详情页</title>
   <link rel="stylesheet" href="./css/font_3471526_rygqt3tm4zb/iconfont.css">
   <link rel="stylesheet" href="./css/goods-details.css">
+  <script src="./js/goods-details.js" type="module"></script>
 </head>
 <body>
     <!-- header部分结构设计 -->
@@ -318,7 +319,7 @@
                 <dt>价格</dt>
                 <dd>
                   <em>￥</em>
-                  <s>90.00</s>
+                  <s class="goods-price-init">90.00</s>
                 </dd>
               </dl>
               <dl>
@@ -345,7 +346,7 @@
             <ul class="tm-ind-panel">
               <li>
                 <span>月销量</span>
-                <em>2万+</em>
+                <em class="salesMonth">2万+</em>
               </li>
               <li>
                 <span>送天猫积分</span>
@@ -429,19 +430,20 @@
                   </ul>
                 </dd>
               </dl>
-              <dl class="tb-amount">
-                <dt>数量</dt>
-                <dd>
-                  <input type="text" value="1">
-                  <span class="mui-amount-btn">
-                    <span class="mui-amount-increase">^</span>
-                    <span class="mui-amount-decrease">^</span>
-                  </span>
-                  <i>件</i>
-                  <em>有货</em>
-                </dd>
-              </dl>
             </div>
+            <dl class="tb-amount">
+              <dt>数量</dt>
+              <dd>
+                <input type="text" value="1" class="selectNum">
+                <span class="mui-amount-btn">
+                  <span class="mui-amount-increase">^</span>
+                  <span class="mui-amount-decrease">^</span>
+                </span>
+                <i>件</i>
+                <b>库存<span class="inventory"></span></b>
+                <em>有货</em>
+              </dd>
+            </dl>
 
             <div class="tb-action">
                 <div class="tb-btn-buy">立即购买</div>
@@ -946,11 +948,83 @@
 
           </div>
 
-          <div class="mainwrap"></div>
+          <div class="mainwrap">
+            <div class="j_tabBarBox">
+              <div class="phone-buy">
+                <span>手机购买</span>
+                <i class="iconfont icon-erweima"></i>
+                <i class="iconfont icon-sanjiaoxia"></i>
+                <div class="phone-buy-ewm">
+                  <img src="./img/10090.png" alt="">
+                </div>
+              </div>
+              <ul class="tabs">
+                <li class="main-wrap-active">商品详情</li>
+                <li>评价</li>
+              </ul>
+            </div>
+            <div class="tabs-con">
+              <div class="tabs-items">
+                <div class="charityTreasure">
+                  <img src="./img/10131.jpg" alt="">
+                  <div class="charityTreasure-info">
+                    <p class="brief">该商品参与了公益宝贝计划，卖家承诺每笔成交将为<em>扬帆捐书计划</em>捐赠<em>0.1元</em>。该商品已累积捐赠<em>43690笔</em>。</p>
+                    <p class="use">
+                      <span class="field">善款用途简介：</span>
+                      <span class="info-detail">
+                        <span>【每15元支持乡村孩子1本课外图书及持续阅读指导】 项目计划为1000所乡村学校捐赠60万册优质课外图书，培训500名乡村老师成为初级儿童阅...</span>
+                          <a href="javascript:;">了解详情>></a>
+                      </span>
+                    </p>
+                  </div>
+                </div>
+                <div class="attributes-list">
+                  <div class="attributes-list-name">
+                    品牌名称：
+                    <span>L'OREAL /欧莱雅</span>
+                  </div>
+                  <div class="attr-list-hd">
+                    <em>参数</em>
+                  </div>
+                  <ul class="i_attrul">
+                    <li>产品名称：L＇oreal/欧莱雅 男士水能保湿酷爽水凝露</li>
+                    <li>品牌: L'OREAL /欧莱雅</li>
+                    <li>欧莱雅单品: 男士水能保湿酷爽水凝露</li>
+                    <li>化妆品备案编号/注册证号: 苏G妆网备字2014000775</li>
+                    <li>适合肤质: 任何肤质</li>
+                    <li>上市时间: 2015年</li>
+                    <li>功效: 补水</li>
+                    <li>规格类型: 正常规格 单支装 双支装</li>
+                    <li>款式: 基本款</li>
+                    <li>是否为特殊用途化妆品: 否</li>
+                    <li>净含量: 120ml</li>
+                    <li>限期使用日期范围: 2023-01-01至2023-06-01</li>
+                    <li>化妆品保质期: 36个月</li>
+                  </ul>
+                </div>
+    
+                <div class="attr-alert">
+                  <b>消费提醒：</b>
+                  <span>
+                    国家药监局提醒您：不要将玩具当做儿童化妆品使用，选购儿童化妆品时请关注“小金盾”标志。”小金盾”标志下载地址：
+                    https://www.nmpa.gov.cn/xxgk/ggtg/qtggtg/20211201170227187.html。
+                  </span>
+                </div>
+
+                <div class="details-img-box">
+                  <img src="./img/20013.jpg" alt="">
+                </div>
+              </div>
+            </div>
+
+          </div>
         </div>
       </div>
       <div class="goods-details-right"></div>
     </div>
   </div>
+
+<script src="./js/goods-details.dom.js" type="module"></script>
+  
 </body>
 </html>

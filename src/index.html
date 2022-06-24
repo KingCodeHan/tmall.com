@@ -8,10 +8,13 @@
   <title>TMALL</title>
   <!-- <link rel="stylesheet" href="../bootstrap-3.4.1/dist/css/bootstrap.min.css"> -->
   <link rel="stylesheet" href="./css/font_3471526_rygqt3tm4zb/iconfont.css">
-  <link rel="stylesheet" href="./css/public.css">
+  <link rel="stylesheet" href="../swiper-7.4.1/swiper/swiper-bundle.min.css">
+  <!-- <link rel="stylesheet" href="./css/public.css">
   <link rel="stylesheet" href="./css/header.css">
   <link rel="stylesheet" href="../src/css/index.css">
-  <link rel="stylesheet" href="../src/css/footer.css">
+  <link rel="stylesheet" href="../src/css/footer.css"> -->
+  <link rel="stylesheet" href="./css/index.css">
+  <script src="./js/index.js" type="module"></script>
 </head>
 
 <body>
@@ -41,7 +44,7 @@
         <li class="header-right-mytaobao dropdown">
           <a href="javascript:;">
             我的淘宝
-           
+
           </a>
           <i class="iconfont icon-sanjiaoxia carts"></i>
           <ul class="dropdown-left">
@@ -62,7 +65,7 @@
         <li class="header-right-favorites dropdown">
           <a href="javascript:;">
             收藏夹
-            
+
           </a>
           <i class="iconfont icon-sanjiaoxia carts"></i>
           <ul class="dropdown-left">
@@ -85,7 +88,7 @@
         <li class="dropdown">
           <a href="javascript:;">
             商家支持
-           
+
           </a>
           <i class="iconfont icon-sanjiaoxia carts"></i>
           <ul class="dropdown-right">
@@ -281,7 +284,7 @@
             <a href="javascript:;">
               <img src="../src/img/10009.png" alt="天猫超市" title="天猫超市">
             </a>
-            <a href="javascript:;" >
+            <a href="javascript:;">
               <img src="../src/img/10010.png" alt="天猫国际" title="天猫国际">
             </a>
             <a href="javascript:;">天猫会员</a>
@@ -296,15 +299,37 @@
           <!-- content-nav区域右侧的show区域结构 -->
           <div class="content-nav-right-show">
             <div class="shuffling-box">
-              <div class="shuffling1 shuffling"></div>
-              <div class="shuffling2 shuffling"></div>
+              <div class="shuffling1 shuffling swiper">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide"><img src="./img/swiper1.jpg" alt=""></div>
+                  <div class="swiper-slide"><img src="./img/swiper2.jpg" alt=""></div>
+                  <div class="swiper-slide"><img src="./img/swiper3.jpg" alt=""></div>
+                  <div class="swiper-slide"><img src="./img/swiper4.jpg" alt=""></div>
+                  <div class="swiper-slide"><img src="./img/swiper5.jpg" alt=""></div>
+                </div>
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-pagination"></div>
+              </div>
+              <div class="shuffling2 shuffling swiper">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide"><img src="./img/swiper11.jpg" alt=""></div>
+                  <div class="swiper-slide"><img src="./img/swiper12.jpg" alt=""></div>
+                  <div class="swiper-slide"><img src="./img/swiper13.jpg" alt=""></div>
+                  <div class="swiper-slide"><img src="./img/swiper14.jpg" alt=""></div>
+                  <div class="swiper-slide"><img src="./img/swiper15.jpg" alt=""></div>
+                  <div class="swiper-slide"><img src="./img/swiper16.jpg" alt=""></div>
+                  <div class="swiper-slide"><img src="./img/swiper17.jpg" alt=""></div>
+                  <div class="swiper-slide"><img src="./img/swiper18.jpg" alt=""></div>
+                </div>
+              </div>
             </div>
             <div class="userInfo">
               <a href="javascript:;" class="userInfo-login">
                 <img src="../src/img/10110.jpg" alt="">
                 <span>Hi! 你好</span>
               </a>
-              <a href="javasript:;"  class="new-goods">
+              <a href="javasript:;" class="new-goods">
                 <img src="../src/img/10026.jpg" alt="上新商品">
               </a>
               <div class="hot-news">
@@ -354,7 +379,7 @@
       <div class="content-goods">
         <div class="content-goods-list1 content-goods-list">
           <h3 class="goods-title1">
-            <img src="../src/img/10038.png" alt="天猫超市" title="天猫超市"> 
+            <img src="../src/img/10038.png" alt="天猫超市" title="天猫超市">
           </h3>
           <ul class="goods-list-content">
             <li class="goods-items">
@@ -455,29 +480,29 @@
           </h3>
           <div class="goods-list-box">
             <div class="goods-list-box-left">
-             <a href="javascript:;" class="goods-bigimg-item">
-              <img src="../src/img/10050.jpg" alt="">
-              <div class="abbox">
-                <div>进口直降</div>
-                <div></div>
-                <div>
-                  <p class="floor-dectitle">全球尖货</p>
-                  <p class="floor-decinfo">立即抢</p>
+              <a href="javascript:;" class="goods-bigimg-item">
+                <img src="../src/img/10050.jpg" alt="">
+                <div class="abbox">
+                  <div>进口直降</div>
+                  <div></div>
+                  <div>
+                    <p class="floor-dectitle">全球尖货</p>
+                    <p class="floor-decinfo">立即抢</p>
+                  </div>
                 </div>
-              </div>
-            </a>
+              </a>
 
-             <a href="javascript:;" class="goods-bigimg-item">
-              <img src="../src/img/10050.jpg" alt="">
-              <div class="abbox">
-                <div>官方大牌</div>
-                <div></div>
-                <div>
-                  <p class="floor-dectitle">国际自营</p>
-                  <p class="floor-decinfo">直降中</p>
+              <a href="javascript:;" class="goods-bigimg-item">
+                <img src="../src/img/10050.jpg" alt="">
+                <div class="abbox">
+                  <div>官方大牌</div>
+                  <div></div>
+                  <div>
+                    <p class="floor-dectitle">国际自营</p>
+                    <p class="floor-decinfo">直降中</p>
+                  </div>
                 </div>
-              </div>
-            </a>
+              </a>
             </div>
             <div class="goods-list-content">
               <li class="goods-items">
@@ -841,12 +866,12 @@
   <!-- footer部分结构设计 -->
   <footer id="footer">
     <div class="service-link-box">
-        <div class="con">
-          <a href="javascript:;"></a>
-          <a href="javascript:;"></a>
-          <a href="javascript:;"></a>
-          <a href="javascript:;"></a>
-        </div>
+      <div class="con">
+        <a href="javascript:;"></a>
+        <a href="javascript:;"></a>
+        <a href="javascript:;"></a>
+        <a href="javascript:;"></a>
+      </div>
     </div>
     <div class="footer-nav-box">
       <ul class="con">
@@ -921,11 +946,11 @@
         <li>
           <dl>
             <dt>手机天猫</dt>
-          <dd>
-            <a href="javascript:;">
-              <img src="../src/img/10090.png" alt="手机天猫" title="手机天猫">
-            </a>
-          </dd>
+            <dd>
+              <a href="javascript:;">
+                <img src="../src/img/10090.png" alt="手机天猫" title="手机天猫">
+              </a>
+            </dd>
           </dl>
         </li>
       </ul>
@@ -1007,7 +1032,22 @@
       </div>
     </div>
   </footer>
+  <style>
+    .swiper {
+      --swiper-theme-color: #fd894e;
+      /* 设置Swiper风格 */
+      --swiper-navigation-color: #ffdfbf;
+      /* 单独设置按钮颜色 */
+      --swiper-navigation-size: 30px;
+      /* 设置按钮大小 */
 
+    }
+
+    .swiper-slide>img {
+      width: 100%;
+      height: 100%;
+    }
+  </style>
 </body>
 
 </html>
