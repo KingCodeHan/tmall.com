@@ -40,7 +40,7 @@
         <li class="header-right-mytaobao dropdown">
           <a href="javascript:;">
             我的淘宝
-           
+
           </a>
           <i class="iconfont icon-sanjiaoxia carts"></i>
           <ul class="dropdown-left">
@@ -61,7 +61,7 @@
         <li class="header-right-favorites dropdown">
           <a href="javascript:;">
             收藏夹
-            
+
           </a>
           <i class="iconfont icon-sanjiaoxia carts"></i>
           <ul class="dropdown-left">
@@ -84,7 +84,7 @@
         <li class="dropdown">
           <a href="javascript:;">
             商家支持
-           
+
           </a>
           <i class="iconfont icon-sanjiaoxia carts"></i>
           <ul class="dropdown-right">
@@ -121,15 +121,16 @@
         <a href="./index.html"><img src="./img/10006.png" alt="天猫网" title="天猫"></a>
         <span>用户注册</span>
       </h1>
-      <form action="./index.html" name="reg-form" class="reg-form" method="post">
+      <form action="../interface/register.php" name="reg-form" class="reg-form" method="get">
+        
         <div>
           <label for="reg-phone-number" class="reg-left">手机号码</label>
           <div class="reg-right reg-phone-box">
             <input type="text" name="reg-phone-number-input" class="reg-phone-number-input" placeholder="请输入你的手机号码">
             <div class="country-select">
               <div class="show-country">
-                <span>巴勒斯坦</span>
-                <span>+970</span>
+                <span>中国大陆</span>
+                <span>+86</span>
               </div>
 
               <div class="country-select-list" style="display:none;">
@@ -306,29 +307,133 @@
               </div>
 
             </div>
+            <div class="err-phone-message"><i class="iconfont icon-jingshi"></i><span>手机号格式不正确</span></div>
           </div>
         </div>
         <div>
           <label for="verification-code" class="reg-left">验证码</label>
           <div class="reg-right reg-verification-box">
-            <input type="text" name="reg-verification-code-input" class="reg-verification-code-input"
-              maxlength="6" placeholder="请输入效验码">
-            <a href="javascript:;">获取验证码</a>
+            <input type="text" class="reg-verification-code-input" maxlength="6"
+              placeholder="请输入效验码">
+            <span class="send-verification">获取验证码</span>
+            <div class="err-verification-message"><i class="iconfont icon-jingshi"></i><span>手机号格式不正确</span></div>
+
           </div>
         </div>
         <div>
           <div class="reg-left"></div>
-          <button type="submit" class="reg-right reg-btn" disabled>注册</button>
+          <button type="button" class="reg-right reg-btn" disabled>注册</button>
         </div>
         <div>
           <div class="reg-left"></div>
           <div class="reg-right reg-agreement">
-            <input type="checkbox" name="reg-agreement-checkbox" id="reg-agreement-checkbox">
-            <label for="reg-agreement-checkbox">已阅读并同意以下协议<a href="javascript:;">淘宝服务平台协议</a>、<a href="javascript:;">隐私权政策</a>、<a
-                href="javascript:;">法律声明</a>、<a href="javascript:;">支付宝及客户端服务协议</a></label>
+            <input type="checkbox" id="reg-agreement-checkbox" class="reg-agreement-checkbox">
+            <label for="reg-agreement-checkbox">已阅读并同意以下协议<a href="javascript:;">淘宝服务平台协议</a>、<a
+                href="javascript:;">隐私权政策</a>、<a href="javascript:;">法律声明</a>、<a
+                href="javascript:;">支付宝及客户端服务协议</a></label>
           </div>
         </div>
         <p><a href="javascript:;">切换企业账户注册</a></p>
+        <div id="alertBox">
+          <div class="center-box">
+
+            <div class="reg-info-box">
+              <h2>用户注册信息</h2>
+              <div class="reg-info-con">
+                <!-- 用户名 -->
+                <div>
+                  <div class="left">
+                    <div class="lab-info">
+                      <label for="user-name">用户名</label>
+                      <span></span>
+                    </div>
+                    <span>：</span>
+                  </div>
+                  <div class="right">
+                    <input type="text" class="user-name" id="user-name" name="user-name" placeholder="请输入用户名">
+                    <span>*<em>4~16位（字母数字下划线减号）</em></span>
+                  </div>
+                </div>
+                <!-- 用户密码 -->
+                <div>
+                  <div class="left">
+                    <div class="lab-info">
+                      <label for="user-password">用户密码</label>
+                      <span></span>
+                    </div>
+                    <span>：</span>
+                  </div>
+                  <div class="right">
+                    <input type="password" class="user-password" id="user-password" name="user-password" placeholder="请设置密码">
+                    <span>*<em>请设置6-25位字符的密码</em></span>
+                  </div>
+                </div>
+
+                <!-- 确认密码 -->
+                <div>
+                  <div class="left">
+                    <div class="lab-info">
+                      <label for="confirm-password">确认密码</label>
+                      <span></span>
+                    </div>
+                    <span>：</span>
+                  </div>
+                  <div class="right">
+                    <input type="password" class="confirm-password" id="confirm-password" placeholder="请确认密码">
+                    <span>*<em></em></span>
+                  </div>
+                </div>
+
+                <!-- 用户邮箱 -->
+                <div>
+                  <div class="left">
+                    <div class="lab-info">
+                      <label for="user-email">邮箱</label>
+                      <span></span>
+                    </div>
+                    <span>：</span>
+                  </div>
+                  <div class="right">
+                    <input type="email" class="user-email" id="user-email" name="user-email" placeholder="请设置您的邮箱">
+                    <span>*<em>邮箱格式不对</em></span>
+                  </div>
+                </div>
+                <!-- 用户头像 -->
+                <div>
+                  <div class="left">
+                    <div class="lab-info">
+                      <label for="user-photo">头像上传</label>
+                      <span></span>
+                    </div>
+                    <span>：</span>
+                  </div>
+                  
+                  <div class="right">
+                    <input type="file" accept="image/*" class="user-photo" id="user-photo" name="user-photo">
+                  </div>
+                </div>
+                <!-- 用户地址 -->
+                <div>
+                  <div class="left">
+                    <div class="lab-info">
+                      <label for="user-address">地址</label>
+                      <span></span>
+                    </div>
+                    <span>：</span>
+                  </div>
+                  <div class="right">
+                    <textarea name="user-address" id="user-address" class="user-address"></textarea>
+                  </div>
+                </div>
+              </div>
+              <div class="btn-box">
+                <input type="reset" class="user-info-reset" id="user-info-reset" value="重置">
+                <input type="submit" class="user-info-submit" id="user-info-submit" value="注册">
+              </div>
+            </div>
+
+          </div>
+        </div>
       </form>
     </div>
   </main>
@@ -337,12 +442,12 @@
   <!-- footer部分结构设计 -->
   <footer id="footer">
     <div class="service-link-box">
-        <div class="con">
-          <a href="javascript:;"></a>
-          <a href="javascript:;"></a>
-          <a href="javascript:;"></a>
-          <a href="javascript:;"></a>
-        </div>
+      <div class="con">
+        <a href="javascript:;"></a>
+        <a href="javascript:;"></a>
+        <a href="javascript:;"></a>
+        <a href="javascript:;"></a>
+      </div>
     </div>
     <div class="footer-nav-box">
       <ul class="con">
@@ -417,11 +522,11 @@
         <li>
           <dl>
             <dt>手机天猫</dt>
-          <dd>
-            <a href="javascript:;">
-              <img src="../src/img/10090.png" alt="手机天猫" title="手机天猫">
-            </a>
-          </dd>
+            <dd>
+              <a href="javascript:;">
+                <img src="../src/img/10090.png" alt="手机天猫" title="手机天猫">
+              </a>
+            </dd>
           </dl>
         </li>
       </ul>
@@ -504,6 +609,7 @@
     </div>
   </footer>
 
+  <script src="./js/reg.js" type="module"></script>
 </body>
 
 </html>

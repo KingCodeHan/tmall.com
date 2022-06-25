@@ -26,14 +26,14 @@
   margin: 0 auto;
   user-select: none;
 }
-#register-center .reg-form > div {
+#register-center .reg-form > div:not([id='alertBox']) {
   display: flex;
   justify-content: flex-start;
   font-size: 14px;
   line-height: 36px;
   margin-bottom: 20px;
 }
-#register-center .reg-form > div .reg-left {
+#register-center .reg-form > div:not([id='alertBox']) .reg-left {
   width: 120px;
   height: 36px;
   color: #111;
@@ -41,24 +41,24 @@
   text-align: right;
   margin: 0;
 }
-#register-center .reg-form > div .reg-right {
+#register-center .reg-form > div:not([id='alertBox']) .reg-right {
   width: 320px;
   margin-left: 10px;
 }
-#register-center .reg-form > div .reg-right input::placeholder {
+#register-center .reg-form > div:not([id='alertBox']) .reg-right input::placeholder {
   color: #ccc;
 }
-#register-center .reg-form > div .reg-phone-box {
+#register-center .reg-form > div:not([id='alertBox']) .reg-phone-box {
   position: relative;
 }
-#register-center .reg-form > div .reg-phone-box .reg-phone-number-input {
+#register-center .reg-form > div:not([id='alertBox']) .reg-phone-box .reg-phone-number-input {
   width: 170px;
   height: 36px;
   border: 1px solid #d6d6d6;
   border-radius: 3px;
   padding: 0 10px 0 138px;
 }
-#register-center .reg-form > div .reg-phone-box .country-select {
+#register-center .reg-form > div:not([id='alertBox']) .reg-phone-box .country-select {
   position: absolute;
   width: 126px;
   font-size: 14px;
@@ -68,25 +68,25 @@
   top: 1px;
   border-right: 1px solid #d6d6d6;
 }
-#register-center .reg-form > div .reg-phone-box .country-select div {
+#register-center .reg-form > div:not([id='alertBox']) .reg-phone-box .country-select div {
   width: 106px;
   padding: 0 10px;
 }
-#register-center .reg-form > div .reg-phone-box .country-select div > span {
+#register-center .reg-form > div:not([id='alertBox']) .reg-phone-box .country-select div > span {
   display: inline-block;
   vertical-align: top;
 }
-#register-center .reg-form > div .reg-phone-box .country-select div > span:nth-of-type(1) {
+#register-center .reg-form > div:not([id='alertBox']) .reg-phone-box .country-select div > span:nth-of-type(1) {
   width: 60px;
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
 }
-#register-center .reg-form > div .reg-phone-box .country-select div > span:nth-of-type(2) {
+#register-center .reg-form > div:not([id='alertBox']) .reg-phone-box .country-select div > span:nth-of-type(2) {
   width: 40px;
   text-align: right;
 }
-#register-center .reg-form > div .reg-phone-box .country-select .country-select-list {
+#register-center .reg-form > div:not([id='alertBox']) .reg-phone-box .country-select .country-select-list {
   position: absolute;
   left: -1px;
   top: 34px;
@@ -99,26 +99,41 @@
   overflow: auto;
   background-color: #fff;
 }
-#register-center .reg-form > div .reg-phone-box .country-select .country-select-list .active {
+#register-center .reg-form > div:not([id='alertBox']) .reg-phone-box .country-select .country-select-list .active {
   background-color: #ccc;
 }
-#register-center .reg-form > div .reg-verification-box {
+#register-center .reg-form > div:not([id='alertBox']) .err-phone-message,
+#register-center .reg-form > div:not([id='alertBox']) .err-verification-message {
+  display: none;
+  box-sizing: border-box;
+  width: 100%;
+  height: 36px;
+  padding: 0 10px;
+  color: #ff0036;
+  border: 1px solid #ff0036;
+  background-color: #ffeded;
+  margin-top: 10px;
+}
+#register-center .reg-form > div:not([id='alertBox']) .reg-verification-box {
   position: relative;
 }
-#register-center .reg-form > div .reg-verification-box .reg-verification-code-input {
+#register-center .reg-form > div:not([id='alertBox']) .reg-verification-box .reg-verification-code-input {
   width: 226px;
   height: 36px;
   border: 1px solid #d6d6d6;
   border-radius: 3px;
   padding: 0 82px 0 10px;
 }
-#register-center .reg-form > div .reg-verification-box a {
+#register-center .reg-form > div:not([id='alertBox']) .reg-verification-box .send-verification {
   position: absolute;
   top: 1px;
   right: 11px;
   color: #ff5000;
 }
-#register-center .reg-form > div .reg-btn {
+#register-center .reg-form > div:not([id='alertBox']) .reg-verification-box .send-verification-active {
+  color: #ccc !important;
+}
+#register-center .reg-form > div:not([id='alertBox']) .reg-btn {
   border: none;
   border-radius: 3px;
   color: #fff;
@@ -129,18 +144,21 @@
   opacity: 0.6;
   cursor: text;
 }
-#register-center .reg-form > div .reg-agreement {
+#register-center .reg-form > div:not([id='alertBox']) .reg-btn-active {
+  opacity: 1!important;
+}
+#register-center .reg-form > div:not([id='alertBox']) .reg-agreement {
   display: flex;
   justify-content: flex-start;
   font-size: 12px;
   line-height: 20px;
 }
-#register-center .reg-form > div .reg-agreement > label {
+#register-center .reg-form > div:not([id='alertBox']) .reg-agreement > label {
   font-weight: normal;
   margin-left: 10px;
   user-select: none;
 }
-#register-center .reg-form > div .reg-agreement > label > a {
+#register-center .reg-form > div:not([id='alertBox']) .reg-agreement > label > a {
   color: #fd6020;
 }
 #register-center .reg-form p {
@@ -151,4 +169,105 @@
 }
 #register-center .reg-form p > a {
   color: #fd6020;
+}
+#alertBox {
+  display: none;
+  background-color: rgba(0, 0, 0, 0.5);
+  position: fixed;
+  width: 1190px;
+  height: 900px;
+  left: 0;
+  top: 0;
+}
+#alertBox .center-box {
+  width: 620px;
+  padding: 60px;
+  background-color: hsla(0, 0%, 100%, 0.9);
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -60%);
+}
+#alertBox .center-box .reg-info-box > h2 {
+  font-size: 18px;
+  font-weight: 700;
+  text-align: left;
+  margin-bottom: 30px;
+}
+#alertBox .center-box .reg-info-box .reg-info-con > div {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  margin-bottom: 20px;
+}
+#alertBox .center-box .reg-info-box .reg-info-con > div .left {
+  width: 100px;
+  font-size: 14px;
+  color: #6d6d6d;
+  font-weight: 700;
+  line-height: 40px;
+}
+#alertBox .center-box .reg-info-box .reg-info-con > div .left .lab-info {
+  display: inline-block;
+  width: 70px;
+  height: 40px;
+  text-align: justify;
+  overflow: hidden;
+  vertical-align: middle;
+}
+#alertBox .center-box .reg-info-box .reg-info-con > div .left .lab-info > span {
+  display: inline-block;
+  width: 100%;
+}
+#alertBox .center-box .reg-info-box .reg-info-con > div .left > span {
+  vertical-align: middle;
+}
+#alertBox .center-box .reg-info-box .reg-info-con > div .right {
+  width: 520px;
+  user-select: none;
+}
+#alertBox .center-box .reg-info-box .reg-info-con > div .right > input {
+  padding: 0 10px;
+  width: 280px;
+  height: 40px;
+  border: 1px solid #f1eeee;
+}
+#alertBox .center-box .reg-info-box .reg-info-con > div .right > input::placeholder {
+  color: #ccc;
+}
+#alertBox .center-box .reg-info-box .reg-info-con > div .right > span {
+  color: green;
+  margin-left: 10px;
+}
+#alertBox .center-box .reg-info-box .reg-info-con > div .right .span-active {
+  color: red;
+}
+#alertBox .center-box .reg-info-box .reg-info-con > div .right .user-address {
+  padding: 0 10px;
+  width: 320px;
+  height: 100px;
+  resize: none;
+  border: 1px solid #f1eeee;
+}
+#alertBox .center-box .reg-info-box .btn-box {
+  display: flex;
+  justify-content: space-between;
+  margin: 0 80px;
+}
+#alertBox .center-box .reg-info-box .btn-box > input {
+  width: 150px;
+  height: 50px;
+  font-size: 16px;
+  line-height: 48px;
+  font-weight: 700;
+}
+#alertBox .center-box .reg-info-box .btn-box .user-info-reset {
+  background-color: #ccc;
+  border: 1px solid #6d6d6d;
+  color: #444;
+}
+#alertBox .center-box .reg-info-box .btn-box .user-info-submit {
+  background-color: #f40;
+  border: 1px solid #f40;
+  color: #fff;
 }
