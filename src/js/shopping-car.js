@@ -157,10 +157,14 @@ if(getCookies('carGoods')){
 
       function updataCookiesNum(el){
         const newDatas = datas.map(elm => {
-          if(elm.id === $(this).parents('.goods-groups-commodity-items').prop('data-id')){
-           return elm.num = parseInt($(this).parents('.goods-groups-commodity-items').find('.items-nums').val());
+          if(elm.id === $(el).parents('.goods-groups-commodity-items').attr('data-id')){
+            elm.num = parseInt($(el).parents('.goods-groups-commodity-items').find('.items-nums').val());
+            
+            return elm;
           }
+          return elm;
         })
+        // console.log(newDatas);
         let jsonDatas = JSON.stringify(newDatas);
         document.cookie = `carGoods=${jsonDatas}`;
       }
@@ -175,6 +179,7 @@ if(getCookies('carGoods')){
           // }
         });
         let jsonDatas = JSON.stringify(datas);
+        // console.log(jsonDatas);
         document.cookie = `carGoods=${jsonDatas}`;
       }
       $('.items-num-minus').on('click',function(){
@@ -219,11 +224,24 @@ if(getCookies('carGoods')){
         $(this).parents('.goods-groups').find('.group-chk').prop('checked',elLen===ckLen);
         let grElLen = $(this).parents('.car-goods-content').find('.goods-groups').length;
         let grCkLen = $(this).parents('.car-goods-content').find('.group-chk:checked').length;
-        console.log(grElLen);
-        console.log(grCkLen);
-       
+        // console.log(grElLen);
+        // console.log(grCkLen);
+        if(ckLen > 0){
+          $('.settle-accounts').addClass('allow');
+        }else{
+          $('.settle-accounts').removeClass('allow');
+
+        }
         $('#checkAllHeader,#checkAllFooter').prop('checked',grElLen===grCkLen);
         getTotal();
+      })
+
+      // 结算
+      $('.settle-accounts').on('click',function(){
+        if($(this).hasClass('allow')){
+          console.log(1111);
+        }
+        
       })
 
 

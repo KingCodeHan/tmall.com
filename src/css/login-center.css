@@ -15,6 +15,9 @@
   right: 60px;
   top: 120px;
 }
+#center .con .login-box .login-method-active {
+  display: none!important;
+}
 #center .con .login-box .login-method-list {
   width: 52px;
   height: 52px;

@@ -18,21 +18,21 @@
   <main id="center">
     <div class="con">
       <div class="login-box">
-        <div class="login-method-list">
-          <div class="ewmLogin-btn">
+        <div class="login-method-list tabs-list">
+          <div class="inputLogin-btn tabs-list-items login-method-active"></div>
+          <div class="ewmLogin-btn tabs-list-items">
             
           </div>
-          <div class="inputLogin-btn"  style="display: none;"></div>
         </div>
        
-        <div class="login-method-box">
-          <div class="tabs input-login">
+        <div class="login-method-box tabs-con">
+          <div class="tabs input-login tabs-items">
             <div class="tabs-list">
-              <a href="javascript:;" class="list1 active">密码登录</a>
-              <a href="javascript:;" class="list2">短信登录</a>
+              <a href="javascript:;" class="tabs-list-items active">密码登录</a>
+              <a href="javascript:;" class="tabs-list-items">短信登录</a>
             </div>
             <div class="tabs-con">
-              <form action="" class="tabs-items" style="display:none;">
+              <form action="" class="tabs-items">
                 <div class="user-name-box input-box">
                   <label for="user-name" class="lab-info">
                     <i class="iconfont icon-jurassic_user"></i>
@@ -47,7 +47,7 @@
                   <input type="password" id="user-password" name="user-password" class="user-password"
                     placeholder="请输入登录密码">
                 </div>
-                <button type="submit" class="login-btn">
+                <button type="submit" class="login-btn password-login">
                   登录
                 </button>
                 <div class="other-login">
@@ -66,7 +66,7 @@
                   <a href="javascript:;" class="free-reg">免费注册</a>
                 </div>
               </form>
-              <form action="" class="tabs-items">
+              <form action="" class="tabs-items" style="display:none;">
                 <div class="user-phone-box input-box">
                   <label for="user-phone" class="lab-info">
                     <i class="iconfont icon-shouji"></i>
@@ -588,7 +588,7 @@
                     <a href="javascript:;">获取验证码</a>
                   </div>
                 </div>
-                <button type="submit" class="login-btn">
+                <button type="submit" class="login-btn ver-login">
                   登录
                 </button>
                 <div class="other-login">
@@ -609,7 +609,11 @@
             </div>
           </div>
           
-          <div class="ewm-login"></div>
+          <div class="ewm-login tabs-items" style="display:none;">
+
+
+            11111111
+          </div>
         </div>
       </div>
     </div>
@@ -704,6 +708,8 @@
       <a href="javascript:;"></a>
     </div>
   </footer>
+  <script src="./js/login.js" type="module"></script>
+
 </body>
 
 </html>
