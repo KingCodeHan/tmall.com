@@ -1,4 +1,5 @@
 import $ from './jquery-esm.js';
+import Swiper from '../../swiper-7.4.1/swiper/swiper-bundle.esm.browser.min.js';
     // 加入购物车
 
     // 类型选择
@@ -79,23 +80,55 @@ $('.tb-btn-basket').on('click',function(){
 datasObj.prop = arr;
 datasObj.num = parseInt($('.selectNum').val());
 datasObj.id = location.search.split('&')[0].split('=')[1];
-// console.log(datasObj);
-// let jsonDatas = JSON.stringify(datasObj);
 document.cookie = `goods=maoyi`;
 updataCookies('carGoods',datasObj);
-// console.log(JSON.parse(getCookies('carGoods')));
-// console.log(getCookies('carGoods'));
-
-// if(datasObj.prop.length!==0){
-//   // let arr1 =
-//   // console.log(arr1);
-//   // if(!document.cookie.split('; ').map(elm => elm.split('=')).filter(el => el[0] === 'carGoods')){
-//   //   let arr3 = []
-//   //   document.cookie = `carGoods=${jsonDatas}`;
-//   // }
-  
-// }
-
 location.href = './shopping-car.html';
 });
 
+// 商品种类滑过切换图片
+$('.tb-thumb-content').on('mouseover','.swiper-slide',function(){
+  let src = $(this).children('img').prop('src');
+  $('.smallImgBox img').prop('src',src);
+  $('.bigImgBox img').prop('src',src);
+});
+
+// 商品放大镜
+
+$('.ks-imagezoom-wrap').on('mouseover',function(){
+  $('.glass').css('display','block');
+ $('.bigImgBox').css('display','block');
+})
+let maxOffsetX = $('.ks-imagezoom-wrap').width() - $('.glass').width();
+let maxOffsetY = $('.ks-imagezoom-wrap').height() - $('.glass').height();
+let bigImgOffsetX = $('.bigImgBox img').width() - $('.bigImgBox').width();
+let bigImgOffsetY = $('.bigImgBox img').height() - $('.bigImgBox').height();
+$('.ks-imagezoom-wrap').on('mousemove',function(ev){
+  let left = ev.pageX - this.offsetLeft - 50;
+  let top= ev.pageY - this.offsetTop - 50;
+  if(left < 0){
+    left = 0;
+  }else if(left > maxOffsetX){
+    left = maxOffsetX;
+  }
+  if(top < 0){
+    top = 0;
+  }else if(top > maxOffsetY){
+    top = maxOffsetY;
+  }
+
+  let bigImgLeft = left / maxOffsetX * bigImgOffsetX;
+  let bigImgTop = top / maxOffsetY * bigImgOffsetY;
+  $('.bigImgBox img').css({
+    'left': -bigImgLeft,
+    'top': -bigImgTop,
+  });
+   $('.glass').css({
+     'left': left,
+     'top': top,
+   });
+});
+
+$('.ks-imagezoom-wrap').on('mouseleave',function(){
+  $('.glass').css('display','none');
+  $('.bigImgBox').css('display','none');
+});

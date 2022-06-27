@@ -1,4 +1,5 @@
 import $ from './jquery-esm.js';
+import cookie from './cookie.js';
 
 
 function tabs(el,className){
@@ -16,20 +17,32 @@ tabs('.input-login','active');
 tabs('.login-box','login-method-active');
 
 // 密码登录验证
-$('.password-login').on('click',function(){
+$('.password-login').on('click',function(ev){
+  ev.preventDefault();
   let userName = $('#user-name').val();
-  let userPassword = $('.user-password-box').val();
+  let userPassword = $('.user-password').val();
+  let backHref = location.href;
+  console.log(111);
+
   if( userName !== '' && userPassword !== ''){
     $.ajax({
       type:'get',
-      url: '../interface/login.php',
+      url: '../interface/login-password.php',
       data:{
         userName,
         userPassword,
+        backHref,
       },
-      dataType: 'json',
     }).then(res => {
-      console.log(res);
+      // alert(res)
+      const result = JSON.parse(res);
+      if(result.logined){
+        cookie.set('loginInfo',JSON.stringify(result.loginInfo),5);
+        $('html').append('<script>location.href = document.referrer</script>');
+      }else{
+        alert(result.loginInfo);
+      }
+    //  $('body').append(res);
     }).catch(err => {
       console.log(err.status);
     });

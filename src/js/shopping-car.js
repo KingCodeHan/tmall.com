@@ -1,5 +1,14 @@
 import $ from './jquery-esm.js';
+import cookie from './cookie.js';
 
+if(cookie.get('loginInfo')){
+  const loginInfo = JSON.parse(cookie.get('loginInfo'));
+  console.log(loginInfo);
+  $('.hello-tmall').text(`${loginInfo.userName},欢迎来到天猫`);
+  $('.login-place a').prop('href',`./user-info.html?userId=${loginInfo.userId}`).text(loginInfo.userName);
+  $('.header-right-shopping-car a').prop('href',`./shopping-car.html?userId=${loginInfo.userId}`);
+  $('.userInfo-login').prop('href',`./user-info.html?userId=${loginInfo.userId}`).children('img').prop('src',loginInfo.userPhoto).siblings('span').text(`hi! ${loginInfo.userName}`);
+}
 function getCookies(key){
   if(document.cookie.split('; ').map(elm => elm.split('=')).filter(el => el[0] === key)[0]){
     return document.cookie.split('; ').map(elm => elm.split('=')).filter(el => el[0] === key)[0][1];

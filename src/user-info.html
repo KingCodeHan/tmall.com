@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    .backLogin {
+      width: 100px;
+      height: 50px;
+      background-color: skyblue;
+      border-radius: 8px;
+      font-size: 18px;
+      color: #fff;
+      font-weight: 700;
+      line-height: 50px;
+      text-align: center;
+      cursor: pointer;
+      user-select: none;
+    }
+  </style>
+  <script>
+    document.addEventListener('DOMContentLoaded',function(){
+      let userId = location.search.slice(1).split('&').map(el => el.split('=')).filter(elm => elm[0] === 'userId')[0][1];
+      document.querySelector('span').innerText = userId;
+      let backBtn = document.querySelector('.backLogin');
+      backBtn.addEventListener('click',function(){
+        document.cookie = 'loginInfo="" expires=-1 path="/"';
+      });
+    });
+  </script>
+</head>
+<body>
+  <h1>用户信息页面，userId为<span>10002</span></h1>
+  <div class="backLogin">退出登录</div>
+</body>
+</html>

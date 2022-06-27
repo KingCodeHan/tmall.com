@@ -301,6 +301,7 @@ img {
   top: 1px;
   right: 11px;
   color: #ff5000;
+  cursor: pointer;
 }
 #register-center .reg-form > div:not([id='alertBox']) .reg-verification-box .send-verification-active {
   color: #ccc !important;

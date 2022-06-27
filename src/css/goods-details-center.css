@@ -361,7 +361,7 @@
 #goods-details .details-content .goods-details-left .tm-detail-meta .tb-gallery .ks-imagezoom-wrap {
   width: 418px;
   height: 418px;
-  background-color: red;
+  position: relative;
 }
 #goods-details .details-content .goods-details-left .tm-detail-meta .tb-gallery .ks-imagezoom-wrap > a {
   display: inline-block;
@@ -372,21 +372,44 @@
   width: 100%;
   height: 100%;
 }
+#goods-details .details-content .goods-details-left .tm-detail-meta .tb-gallery .ks-imagezoom-wrap .glass {
+  display: none;
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  background-color: rgba(255, 255, 255, 0.5);
+  left: 50px;
+  top: 50px;
+}
+#goods-details .details-content .goods-details-left .tm-detail-meta .tb-gallery .ks-imagezoom-wrap .bigImgBox {
+  display: none;
+  width: 418px;
+  height: 418px;
+  position: absolute;
+  left: 420px;
+  top: 0;
+  overflow: hidden;
+  pointer-events: none;
+  z-index: 1000;
+}
+#goods-details .details-content .goods-details-left .tm-detail-meta .tb-gallery .ks-imagezoom-wrap .bigImgBox > img {
+  width: 1000px;
+  height: 1000px;
+  position: absolute;
+}
 #goods-details .details-content .goods-details-left .tm-detail-meta .tb-gallery .tb-thumb-content {
-  width: 100%;
+  width: 400px;
   height: 60px;
   overflow: hidden;
   margin-top: 22px;
 }
 #goods-details .details-content .goods-details-left .tm-detail-meta .tb-gallery .tb-thumb-content .tb-thumb {
-  width: 480px;
+  box-sizing: border-box;
 }
 #goods-details .details-content .goods-details-left .tm-detail-meta .tb-gallery .tb-thumb-content .tb-thumb > li {
   box-sizing: border-box;
   width: 60px;
   height: 60px;
-  float: left;
-  margin: 0 10px;
 }
 #goods-details .details-content .goods-details-left .tm-detail-meta .tb-gallery .tb-thumb-content .tb-thumb > li:hover {
   border: 1px solid #000;
@@ -394,14 +417,6 @@
 #goods-details .details-content .goods-details-left .tm-detail-meta .tb-gallery .tb-thumb-content .tb-thumb > li > img {
   width: 100%;
   height: 100%;
-}
-#goods-details .details-content .goods-details-left .tm-detail-meta .tb-gallery .tb-thumb-content .tb-thumb::after {
-  content: '';
-  display: block;
-  height: 0;
-  overflow: hidden;
-  visibility: hidden;
-  clear: both;
 }
 #goods-details .details-content .goods-details-left .tm-detail-meta .tb-gallery .tm-action {
   padding: 38px 40px 25px;

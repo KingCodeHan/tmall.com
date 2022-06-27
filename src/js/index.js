@@ -1,5 +1,14 @@
 import $ from './jquery-esm.js';
 import {Swiper} from '../../swiper-7.4.1/swiper/swiper-bundle.esm.browser.min.js';
+import cookie from './cookie.js';
+if(cookie.get('loginInfo')){
+  const loginInfo = JSON.parse(cookie.get('loginInfo'));
+  console.log(loginInfo);
+  $('.hello-tmall').text(`${loginInfo.userName},欢迎来到天猫`);
+  $('.login-place a').prop('href',`./user-info.html?userId=${loginInfo.userId}`).text(loginInfo.userName);
+  $('.header-right-shopping-car a').prop('href',`./shopping-car.html?userId=${loginInfo.userId}`);
+  $('.userInfo-login').prop('href',`./user-info.html?userId=${loginInfo.userId}`).children('img').prop('src',loginInfo.userPhoto).siblings('span').text(`hi! ${loginInfo.userName}`);
+}
 $.ajax({
   url:'../interface/index.php', // 请求路径
   type:'get', // 请求类型

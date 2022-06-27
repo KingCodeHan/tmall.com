@@ -57,32 +57,36 @@ $('.reg-phone-number-input').on('input',function(){
 })
 
 // 发送验证码
+let verFlag = true;
 $('.send-verification').on('click',function(){
  
-  let reg = /^(?:(?:\+|00)86)?1(?:(?:3[\d])|(?:4[5-79])|(?:5[0-35-9])|(?:6[5-7])|(?:7[0-8])|(?:8[\d])|(?:9[189]))\d{8}$/;
+  if(verFlag){
+    verFlag = false;
+    let reg = /^(?:(?:\+|00)86)?1(?:(?:3[\d])|(?:4[5-79])|(?:5[0-35-9])|(?:6[5-7])|(?:7[0-8])|(?:8[\d])|(?:9[189]))\d{8}$/;
   if(phoneFlag) {
     cookie.set('reg-agreement',123456,1);
     cookie.set('reg-phone',$('.reg-phone-number-input').val(),1);
 
-    let i = 59;
+    let i = 9;
     // 
-    $(this).attr('disabled',true);
+    // $(this).attr('disabled',true);
     $(this).addClass('send-verification-active').text(`重发验证（ ${i} s）`);
     // console.log(111);
     let timer = setInterval(() => {
       i--;
       if(i < 1){
         $(this).text(`重发`).removeClass('send-verification-active').attr('disabled',false);
-        
+        verFlag = true;
+        cookie.set('reg-agreement','',-1);
+        cookie.set('reg-phone','',-1);
         clearInterval(timer);
       }else{
         $(this).text(`重发验证（ ${i} s）`);
       }
-      // console.log(111);
-      
     },1000);
   }
  
+  }
 
 });
 
